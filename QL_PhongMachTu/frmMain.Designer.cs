@@ -50,7 +50,7 @@
             this.tipTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
             this.thayĐổiThôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tipItemDangXuat = new System.Windows.Forms.ToolStripMenuItem();
-            this.thoátToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipItemThoat = new System.Windows.Forms.ToolStripMenuItem();
             this.picQLKhamBenh = new System.Windows.Forms.PictureBox();
             this.picLapBaoCao = new System.Windows.Forms.PictureBox();
             this.picQLThuoc = new System.Windows.Forms.PictureBox();
@@ -228,7 +228,7 @@
             this.tipTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.thayĐổiThôngTinToolStripMenuItem,
             this.tipItemDangXuat,
-            this.thoátToolStripMenuItem});
+            this.tipItemThoat});
             this.tipTaiKhoan.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.tipTaiKhoan.Name = "tipTaiKhoan";
             this.tipTaiKhoan.Size = new System.Drawing.Size(163, 47);
@@ -247,11 +247,12 @@
             this.tipItemDangXuat.Text = "Đăng Xuất";
             this.tipItemDangXuat.Click += new System.EventHandler(this.tipItemDangXuat_Click);
             // 
-            // thoátToolStripMenuItem
+            // tipItemThoat
             // 
-            this.thoátToolStripMenuItem.Name = "thoátToolStripMenuItem";
-            this.thoátToolStripMenuItem.Size = new System.Drawing.Size(244, 28);
-            this.thoátToolStripMenuItem.Text = "Thoát";
+            this.tipItemThoat.Name = "tipItemThoat";
+            this.tipItemThoat.Size = new System.Drawing.Size(244, 28);
+            this.tipItemThoat.Text = "Thoát";
+            this.tipItemThoat.Click += new System.EventHandler(this.tipItemThoat_Click);
             // 
             // picQLKhamBenh
             // 
@@ -401,7 +402,7 @@
         private ToolStripMenuItem lậpBáoCáoSửDụngThuốcToolStripMenuItem;
         private ToolStripMenuItem thayĐổiThôngTinToolStripMenuItem;
         private ToolStripMenuItem tipItemDangXuat;
-        private ToolStripMenuItem thoátToolStripMenuItem;
+        private ToolStripMenuItem tipItemThoat;
         private PictureBox picQLKhamBenh;
         private PictureBox picLapBaoCao;
         private PictureBox picLapHoaDon;
