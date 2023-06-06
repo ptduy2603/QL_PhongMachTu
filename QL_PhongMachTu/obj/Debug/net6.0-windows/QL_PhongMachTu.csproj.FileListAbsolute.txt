@@ -24,3 +24,5 @@ D:\QL_PhongMachTu\QL_PhongMachTu\bin\Debug\net6.0-windows\runtimes\win-x86\nativ
 D:\QL_PhongMachTu\QL_PhongMachTu\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\QL_PhongMachTu\QL_PhongMachTu\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.csproj.CopyComplete
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmThayDoiThongTin.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmQuanLyTaiKhoan.resources

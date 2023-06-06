@@ -216,6 +216,7 @@
             this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
             this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(240, 28);
             this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // thayĐổiQuyĐịnhToolStripMenuItem
             // 
@@ -239,6 +240,7 @@
             this.thayĐổiThôngTinToolStripMenuItem.Name = "thayĐổiThôngTinToolStripMenuItem";
             this.thayĐổiThôngTinToolStripMenuItem.Size = new System.Drawing.Size(244, 28);
             this.thayĐổiThôngTinToolStripMenuItem.Text = "Thay Đổi Thông Tin";
+            this.thayĐổiThôngTinToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiThôngTinToolStripMenuItem_Click);
             // 
             // tipItemDangXuat
             // 

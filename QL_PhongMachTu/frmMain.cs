@@ -29,7 +29,7 @@ namespace QL_PhongMachTu
                 btnLapBaoCao.ForeColor = Color.Black;
                 btnLapBaoCao.BackColor = Color.LightSlateGray;
             }
-            tipTaiKhoan.Text = "Tài Khoản (" + TaiKhoan.tenDangNhap + ")";
+            tipTaiKhoan.Text = "Tài Khoản (" + TaiKhoan.tenDangNhap.Trim() + ")";
 
         }
 
@@ -44,7 +44,23 @@ namespace QL_PhongMachTu
         {
             DialogResult result = MessageBox.Show("Bạn có thật sự muốn thoát không?", "Hỏi thoát", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (result == DialogResult.Yes)
+            {
+                System.Diagnostics.Process.GetCurrentProcess().Kill();
                 Application.Exit();
+            }
         }
+
+        private void thayĐổiThôngTinToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThayDoiThongTin fThayDoiThongTin = new frmThayDoiThongTin();
+            fThayDoiThongTin.ShowDialog();
+        }
+
+        private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyTaiKhoan fQuanLyTaiKhoan = new frmQuanLyTaiKhoan();
+            fQuanLyTaiKhoan.ShowDialog();
+        }
+
     }
 }

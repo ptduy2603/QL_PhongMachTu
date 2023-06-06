@@ -13,6 +13,7 @@ namespace QL_PhongMachTu
         private void btnExit_Click(object sender, EventArgs e)
         {
             // đóng toàn bộ chương trình 
+            System.Diagnostics.Process.GetCurrentProcess().Kill();
             Application.Exit();
         }
 
@@ -95,6 +96,7 @@ namespace QL_PhongMachTu
             else
                 txtPassword.PasswordChar = '*';            
         }
+
     }
 
 }
