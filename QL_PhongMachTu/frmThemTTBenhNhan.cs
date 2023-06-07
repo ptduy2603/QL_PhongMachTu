@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data;
+using System.Data.SqlClient;
 
 namespace QL_PhongMachTu
 {
@@ -17,32 +19,42 @@ namespace QL_PhongMachTu
             InitializeComponent();
         }
 
+        // hàm lấy data từ database đổ vào danh sách bệnh nhân 
+        public void loadDataPatient()
+        {
+            SqlConnection con = Connection.getConnection();
+            con.Open();
+
+            SqlCommand cmd = new SqlCommand()
+            {
+                CommandType = CommandType.StoredProcedure,
+                Connection = con,
+                CommandText = "spGetAllPatient",
+            };
+            
+            SqlDataAdapter da = new SqlDataAdapter(cmd);
+             DataTable dt = new DataTable();
+            da.Fill(dt);
+            dgvDanhSachBenhNhan.DataSource = dt;
+            dgvDanhSachBenhNhan.Columns[0].HeaderText = "Mã Bệnh Nhân";
+            dgvDanhSachBenhNhan.Columns[1].HeaderText = "Họ Tên";
+            dgvDanhSachBenhNhan.Columns[2].HeaderText = "Giới Tính";
+            dgvDanhSachBenhNhan.Columns[3].HeaderText = "Năm Sinh";
+            dgvDanhSachBenhNhan.Columns[4].HeaderText = "Địa Chỉ";
+        }
+
         private void frmThemTTBenhNhan_Load(object sender, EventArgs e)
         {
-
+            txtMaBenhNhan.PlaceholderText = BenhNhan.getAutoId();
+            txtTenBenhNhan.Focus();
+            loadDataPatient();
         }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
             frmQLKB QLKB = new frmQLKB();
             QLKB.Show();
             this.Hide();
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
         }
 
         private void chkNam_CheckedChanged(object sender, EventArgs e)
@@ -69,9 +81,6 @@ namespace QL_PhongMachTu
             }
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
     }
 }

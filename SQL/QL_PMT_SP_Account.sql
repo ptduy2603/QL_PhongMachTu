@@ -84,3 +84,8 @@ begin
 end
 go
 
+-- Viết sp cho bảng tham số :
+-- Thay đổi giá trị của tham số 
+
+-- Thêm mới một tham số 
+
