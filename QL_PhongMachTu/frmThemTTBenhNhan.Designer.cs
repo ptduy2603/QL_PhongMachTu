@@ -37,6 +37,7 @@
             btnLapPhieu = new Button();
             taiKhoanBindingSource = new BindingSource(components);
             groupBox1 = new GroupBox();
+            textBox1 = new TextBox();
             chkNu = new CheckBox();
             chkNam = new CheckBox();
             txtDiaChi = new TextBox();
@@ -51,7 +52,6 @@
             label2 = new Label();
             groupBox2 = new GroupBox();
             dataGridView1 = new DataGridView();
-            textBox1 = new TextBox();
             MaBenhNhan = new DataGridViewTextBoxColumn();
             HoTen = new DataGridViewTextBoxColumn();
             NamSinh = new DataGridViewTextBoxColumn();
@@ -137,6 +137,7 @@
             btnLapPhieu.TabIndex = 5;
             btnLapPhieu.Text = "Lập Phiếu Khám Bệnh";
             btnLapPhieu.UseVisualStyleBackColor = false;
+            btnLapPhieu.Click += btnLapPhieu_Click;
             // 
             // taiKhoanBindingSource
             // 
@@ -165,6 +166,13 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập Thông Tin Bệnh Nhân";
             groupBox1.Enter += groupBox1_Enter;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(166, 129);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(273, 27);
+            textBox1.TabIndex = 21;
             // 
             // chkNu
             // 
@@ -293,24 +301,19 @@
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { MaBenhNhan, HoTen, NamSinh, DienThoai, DiaChi, GioiTinh });
             dataGridView1.Location = new Point(6, 26);
             dataGridView1.Name = "dataGridView1";
+            dataGridView1.ReadOnly = true;
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(484, 223);
             dataGridView1.TabIndex = 0;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(166, 129);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(273, 27);
-            textBox1.TabIndex = 21;
-            // 
             // MaBenhNhan
             // 
             MaBenhNhan.HeaderText = "Mã Bệnh Nhân";
             MaBenhNhan.MinimumWidth = 6;
             MaBenhNhan.Name = "MaBenhNhan";
+            MaBenhNhan.ReadOnly = true;
             MaBenhNhan.Width = 90;
             // 
             // HoTen
@@ -318,6 +321,7 @@
             HoTen.HeaderText = "Họ Tên";
             HoTen.MinimumWidth = 6;
             HoTen.Name = "HoTen";
+            HoTen.ReadOnly = true;
             HoTen.Width = 125;
             // 
             // NamSinh
@@ -325,6 +329,7 @@
             NamSinh.HeaderText = "Năm Sinh";
             NamSinh.MinimumWidth = 6;
             NamSinh.Name = "NamSinh";
+            NamSinh.ReadOnly = true;
             NamSinh.Width = 125;
             // 
             // DienThoai
@@ -332,6 +337,7 @@
             DienThoai.HeaderText = "Điện Thoại";
             DienThoai.MinimumWidth = 6;
             DienThoai.Name = "DienThoai";
+            DienThoai.ReadOnly = true;
             DienThoai.Width = 125;
             // 
             // DiaChi
@@ -339,6 +345,7 @@
             DiaChi.HeaderText = "Địa Chỉ";
             DiaChi.MinimumWidth = 6;
             DiaChi.Name = "DiaChi";
+            DiaChi.ReadOnly = true;
             DiaChi.Width = 125;
             // 
             // GioiTinh
@@ -346,6 +353,7 @@
             GioiTinh.HeaderText = "Giới Tính";
             GioiTinh.MinimumWidth = 6;
             GioiTinh.Name = "GioiTinh";
+            GioiTinh.ReadOnly = true;
             GioiTinh.Width = 125;
             // 
             // frmThemTTBenhNhan

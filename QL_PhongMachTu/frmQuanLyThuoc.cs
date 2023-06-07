@@ -15,6 +15,7 @@ namespace QL_PhongMachTu
         public frmQuanLyThuoc()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void frmQuanLyThuoc_Load(object sender, EventArgs e)

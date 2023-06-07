@@ -15,6 +15,7 @@ namespace QL_PhongMachTu
         public frmThemTTBenhNhan()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void frmThemTTBenhNhan_Load(object sender, EventArgs e)
@@ -72,6 +73,13 @@ namespace QL_PhongMachTu
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void btnLapPhieu_Click(object sender, EventArgs e)
+        {
+            frmLapPhieuKham lapPhieuKham = new frmLapPhieuKham();
+            lapPhieuKham.Show();
+            this.Close();
         }
     }
 }

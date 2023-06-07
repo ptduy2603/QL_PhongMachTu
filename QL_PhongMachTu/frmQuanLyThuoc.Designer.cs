@@ -62,7 +62,7 @@
             label1.ForeColor = SystemColors.ControlLightLight;
             label1.Location = new Point(0, 0);
             label1.Name = "label1";
-            label1.Size = new Size(874, 34);
+            label1.Size = new Size(1180, 34);
             label1.TabIndex = 0;
             label1.Text = "QUẢN LÝ THUỐC";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -71,7 +71,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(33, 57);
+            label2.Location = new Point(19, 53);
             label2.Name = "label2";
             label2.Size = new Size(106, 28);
             label2.TabIndex = 1;
@@ -81,7 +81,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(33, 96);
+            label3.Location = new Point(19, 139);
             label3.Name = "label3";
             label3.Size = new Size(109, 28);
             label3.TabIndex = 2;
@@ -91,17 +91,17 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label4.Location = new Point(33, 135);
+            label4.Location = new Point(19, 225);
             label4.Name = "label4";
-            label4.Size = new Size(125, 28);
+            label4.Size = new Size(77, 28);
             label4.TabIndex = 3;
-            label4.Text = "Đơn Vị Tính";
+            label4.Text = "Đơn Vị";
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(33, 174);
+            label5.Location = new Point(19, 397);
             label5.Name = "label5";
             label5.Size = new Size(43, 28);
             label5.TabIndex = 4;
@@ -113,9 +113,9 @@
             button1.Cursor = Cursors.Hand;
             button1.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(12, 270);
+            button1.Location = new Point(19, 472);
             button1.Name = "button1";
-            button1.Size = new Size(135, 57);
+            button1.Size = new Size(168, 97);
             button1.TabIndex = 5;
             button1.Text = "Thêm";
             button1.UseVisualStyleBackColor = false;
@@ -127,9 +127,9 @@
             button2.Cursor = Cursors.Hand;
             button2.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(163, 270);
+            button2.Location = new Point(203, 472);
             button2.Name = "button2";
-            button2.Size = new Size(135, 57);
+            button2.Size = new Size(168, 97);
             button2.TabIndex = 6;
             button2.Text = "Sửa";
             button2.UseVisualStyleBackColor = false;
@@ -140,9 +140,9 @@
             button3.Cursor = Cursors.Hand;
             button3.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(12, 348);
+            button3.Location = new Point(19, 585);
             button3.Name = "button3";
-            button3.Size = new Size(135, 57);
+            button3.Size = new Size(168, 97);
             button3.TabIndex = 7;
             button3.Text = "Xóa";
             button3.UseVisualStyleBackColor = false;
@@ -153,9 +153,9 @@
             button4.Cursor = Cursors.Hand;
             button4.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point);
             button4.ForeColor = SystemColors.ControlLightLight;
-            button4.Location = new Point(163, 348);
+            button4.Location = new Point(203, 585);
             button4.Name = "button4";
-            button4.Size = new Size(135, 57);
+            button4.Size = new Size(168, 97);
             button4.TabIndex = 8;
             button4.Text = "Thoát";
             button4.UseVisualStyleBackColor = false;
@@ -163,51 +163,53 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(163, 55);
+            textBox1.Location = new Point(149, 51);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(135, 27);
-            textBox1.TabIndex = 9;
+            textBox1.Size = new Size(223, 27);
+            textBox1.TabIndex = 0;
             // 
             // textBox2
             // 
-            textBox2.Location = new Point(163, 94);
+            textBox2.Location = new Point(149, 140);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(135, 27);
-            textBox2.TabIndex = 10;
+            textBox2.Size = new Size(223, 27);
+            textBox2.TabIndex = 1;
             // 
             // textBox3
             // 
-            textBox3.Location = new Point(163, 133);
+            textBox3.Location = new Point(149, 226);
             textBox3.Name = "textBox3";
-            textBox3.Size = new Size(135, 27);
-            textBox3.TabIndex = 11;
+            textBox3.Size = new Size(223, 27);
+            textBox3.TabIndex = 2;
             // 
             // textBox4
             // 
-            textBox4.Location = new Point(163, 172);
+            textBox4.Location = new Point(149, 398);
             textBox4.Name = "textBox4";
-            textBox4.Size = new Size(135, 27);
-            textBox4.TabIndex = 12;
+            textBox4.Size = new Size(223, 27);
+            textBox4.TabIndex = 4;
             // 
             // groupBox1
             // 
             groupBox1.Controls.Add(dataGridView1);
-            groupBox1.Location = new Point(327, 43);
+            groupBox1.Location = new Point(389, 44);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(540, 362);
+            groupBox1.Size = new Size(788, 634);
             groupBox1.TabIndex = 13;
             groupBox1.TabStop = false;
             groupBox1.Text = "Thông Tin Thuốc";
             // 
             // dataGridView1
             // 
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { MaThuoc, TenThuoc, DonVi, GiaThuoc, CachDung });
-            dataGridView1.Location = new Point(6, 22);
+            dataGridView1.Dock = DockStyle.Fill;
+            dataGridView1.Location = new Point(3, 23);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(529, 334);
+            dataGridView1.Size = new Size(782, 608);
             dataGridView1.TabIndex = 0;
             // 
             // MaThuoc
@@ -215,41 +217,36 @@
             MaThuoc.HeaderText = "Mã Thuốc";
             MaThuoc.MinimumWidth = 6;
             MaThuoc.Name = "MaThuoc";
-            MaThuoc.Width = 125;
             // 
             // TenThuoc
             // 
             TenThuoc.HeaderText = "Tên Thuốc";
             TenThuoc.MinimumWidth = 6;
             TenThuoc.Name = "TenThuoc";
-            TenThuoc.Width = 130;
             // 
             // DonVi
             // 
             DonVi.HeaderText = "Đơn Vị Tính";
             DonVi.MinimumWidth = 6;
             DonVi.Name = "DonVi";
-            DonVi.Width = 115;
             // 
             // GiaThuoc
             // 
             GiaThuoc.HeaderText = "Giá Thuốc";
             GiaThuoc.MinimumWidth = 6;
             GiaThuoc.Name = "GiaThuoc";
-            GiaThuoc.Width = 125;
             // 
             // CachDung
             // 
             CachDung.HeaderText = "Cách Dùng";
             CachDung.MinimumWidth = 6;
             CachDung.Name = "CachDung";
-            CachDung.Width = 125;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            label6.Location = new Point(33, 213);
+            label6.Location = new Point(19, 311);
             label6.Name = "label6";
             label6.Size = new Size(114, 28);
             label6.TabIndex = 14;
@@ -257,16 +254,17 @@
             // 
             // textBox5
             // 
-            textBox5.Location = new Point(163, 214);
+            textBox5.Location = new Point(149, 312);
             textBox5.Name = "textBox5";
-            textBox5.Size = new Size(135, 27);
-            textBox5.TabIndex = 15;
+            textBox5.Size = new Size(223, 27);
+            textBox5.TabIndex = 3;
             // 
             // frmQuanLyThuoc
             // 
             AutoScaleDimensions = new SizeF(9F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(874, 426);
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            ClientSize = new Size(1180, 689);
             Controls.Add(textBox5);
             Controls.Add(label6);
             Controls.Add(groupBox1);
@@ -313,12 +311,12 @@
         private TextBox textBox4;
         private GroupBox groupBox1;
         private DataGridView dataGridView1;
+        private Label label6;
+        private TextBox textBox5;
         private DataGridViewTextBoxColumn MaThuoc;
         private DataGridViewTextBoxColumn TenThuoc;
         private DataGridViewTextBoxColumn DonVi;
         private DataGridViewTextBoxColumn GiaThuoc;
-        private Label label6;
-        private TextBox textBox5;
         private DataGridViewTextBoxColumn CachDung;
     }
 }
