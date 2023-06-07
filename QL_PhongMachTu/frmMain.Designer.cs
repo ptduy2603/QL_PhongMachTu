@@ -311,6 +311,7 @@
             this.btnQLKhamBenh.TabIndex = 5;
             this.btnQLKhamBenh.Text = "Quản Lý Khám Bệnh";
             this.btnQLKhamBenh.UseVisualStyleBackColor = false;
+            this.btnQLKhamBenh.Click += new System.EventHandler(this.btnQLKhamBenh_Click);
             // 
             // btnQLThuoc
             // 
@@ -324,6 +325,7 @@
             this.btnQLThuoc.TabIndex = 6;
             this.btnQLThuoc.Text = "Quản Lý Thuốc";
             this.btnQLThuoc.UseVisualStyleBackColor = false;
+            this.btnQLThuoc.Click += new System.EventHandler(this.btnQLThuoc_Click);
             // 
             // btnLapHoaDon
             // 

@@ -62,5 +62,18 @@ namespace QL_PhongMachTu
             fQuanLyTaiKhoan.ShowDialog();
         }
 
+        private void btnQLKhamBenh_Click(object sender, EventArgs e)
+        {
+            frmQLKB QLKB = new frmQLKB();
+            QLKB.Show();
+            this.Hide();
+        }
+
+        private void btnQLThuoc_Click(object sender, EventArgs e)
+        {
+            frmQuanLyThuoc QLT = new frmQuanLyThuoc();
+            QLT.Show();
+            this.Hide();
+        }
     }
 }

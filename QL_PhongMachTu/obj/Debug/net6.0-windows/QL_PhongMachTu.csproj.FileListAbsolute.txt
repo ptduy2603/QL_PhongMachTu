@@ -26,3 +26,6 @@ D:\QL_PhongMachTu\QL_PhongMachTu\bin\Debug\net6.0-windows\runtimes\win\lib\netco
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.csproj.CopyComplete
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmThayDoiThongTin.resources
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmQuanLyTaiKhoan.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmThemTTBenhNhan.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmQLKB.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmQuanLyThuoc.resources
