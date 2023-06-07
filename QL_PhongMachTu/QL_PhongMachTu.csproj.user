@@ -7,5 +7,14 @@
     <Compile Update="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frmQLKB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmQuanLyThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmThemTTBenhNhan.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

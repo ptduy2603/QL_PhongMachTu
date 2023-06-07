@@ -21,7 +21,7 @@ namespace QL_PhongMachTu
         {
             // khi load form tùy loại người dùng để ẩn hiện các chức năng 
             // user thường không được dùng chức năng admin + Lập các báo cáo + Thay đổi quy định
-            if(TaiKhoan.loaiTaiKhoan == 2)
+            if (TaiKhoan.loaiTaiKhoan == 2)
             {
                 tipAdmin.Enabled = false;
                 tipLapBaoCao.Enabled = false;
@@ -38,6 +38,20 @@ namespace QL_PhongMachTu
             frmLogin login = new frmLogin();
             login.Show();
             this.Close();
+        }
+
+        private void btnQLKhamBenh_Click(object sender, EventArgs e)
+        {
+            frmQLKB QLKB = new frmQLKB();
+            QLKB.Show();
+            this.Hide();
+        }
+
+        private void btnQLThuoc_Click(object sender, EventArgs e)
+        {
+            frmQuanLyThuoc quanLyThuoc = new frmQuanLyThuoc();
+            quanLyThuoc.Show();
+            this.Hide();
         }
     }
 }

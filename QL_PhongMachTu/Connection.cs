@@ -12,7 +12,7 @@ namespace QL_PhongMachTu
    
     public class Connection
     {
-        private static string connectionString = @"Data Source=DESKTOP-M15KQ9A\SQLEXPRESS;Initial Catalog=QLPHONGMACHTU;Integrated Security=True";
+        private static string connectionString = @"Data Source=TAKI;Initial Catalog=QLPHONGMACHTU;Integrated Security=True";
         
         // gọi phương thức để tạo ra một đối tượng mở kết nối đến database
         public static SqlConnection getConnection()
