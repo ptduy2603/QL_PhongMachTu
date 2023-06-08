@@ -15,13 +15,14 @@ namespace QL_PhongMachTu
         public frmMain()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void frmMain_Load(object sender, EventArgs e)
         {
             // khi load form tùy loại người dùng để ẩn hiện các chức năng 
             // user thường không được dùng chức năng admin + Lập các báo cáo + Thay đổi quy định
-            if(TaiKhoan.loaiTaiKhoan == 2)
+            if (TaiKhoan.loaiTaiKhoan == 2)
             {
                 tipAdmin.Enabled = false;
                 tipLapBaoCao.Enabled = false;
@@ -71,9 +72,44 @@ namespace QL_PhongMachTu
 
         private void btnQLThuoc_Click(object sender, EventArgs e)
         {
-            frmQuanLyThuoc QLT = new frmQuanLyThuoc();
-            QLT.Show();
+            frmMenuQuanLyThuoc MenuQLT = new frmMenuQuanLyThuoc();
+            MenuQLT.Show();
             this.Hide();
+        }
+
+        private void xemThôngTinThuốcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyThuoc QLThuoc = new frmQuanLyThuoc();
+            QLThuoc.Show();
+            this.Close();
+        }
+
+        private void xemThôngTinĐơnVịToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyDonVi QLDonVi = new frmQuanLyDonVi();
+            QLDonVi.Show();
+            this.Close();
+        }
+
+        private void xemThôngTinCáchDùngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmQuanLyCachDung QLCachDung = new frmQuanLyCachDung();
+            QLCachDung.Show();
+            this.Close();
+        }
+
+        private void lậpPhiếuKhámBệnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLapPhieuKham lapPhieuKham = new frmLapPhieuKham();
+            lapPhieuKham.Show();
+            this.Close();
+        }
+
+        private void thêmBệnhNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThemTTBenhNhan ThemBenhNhan = new frmThemTTBenhNhan();
+            ThemBenhNhan.Show();
+            this.Close();
         }
     }
 }

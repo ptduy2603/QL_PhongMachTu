@@ -15,6 +15,7 @@ namespace QL_PhongMachTu
         public frmQLKB()
         {
             InitializeComponent();
+            this.ControlBox = false;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -38,6 +39,18 @@ namespace QL_PhongMachTu
         {
             frmMain main = new frmMain();
             main.Show();
+            this.Close();
+        }
+
+        private void frmQLKB_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            frmLapPhieuKham lapPhieuKham = new frmLapPhieuKham();
+            lapPhieuKham.Show();
             this.Close();
         }
     }
