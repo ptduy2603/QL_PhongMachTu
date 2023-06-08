@@ -36,8 +36,8 @@
             grbDanhSachTaiKhoan = new GroupBox();
             dvwDanhSachTaiKhoan = new DataGridView();
             groupBox1 = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtTenDonVi = new TextBox();
+            txtMaDonVi = new TextBox();
             label3 = new Label();
             label2 = new Label();
             grbDanhSachTaiKhoan.SuspendLayout();
@@ -110,6 +110,7 @@
             btnThem.TabIndex = 12;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // grbDanhSachTaiKhoan
             // 
@@ -138,8 +139,8 @@
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtTenDonVi);
+            groupBox1.Controls.Add(txtMaDonVi);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(12, 55);
@@ -149,21 +150,21 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập Đơn Vị";
             // 
-            // textBox2
+            // txtTenDonVi
             // 
-            textBox2.BackColor = SystemColors.Menu;
-            textBox2.Location = new Point(455, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(231, 27);
-            textBox2.TabIndex = 3;
+            txtTenDonVi.BackColor = SystemColors.Menu;
+            txtTenDonVi.Location = new Point(455, 88);
+            txtTenDonVi.Name = "txtTenDonVi";
+            txtTenDonVi.Size = new Size(231, 27);
+            txtTenDonVi.TabIndex = 3;
             // 
-            // textBox1
+            // txtMaDonVi
             // 
-            textBox1.BackColor = SystemColors.Menu;
-            textBox1.Location = new Point(31, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 27);
-            textBox1.TabIndex = 2;
+            txtMaDonVi.BackColor = SystemColors.Menu;
+            txtMaDonVi.Location = new Point(31, 88);
+            txtMaDonVi.Name = "txtMaDonVi";
+            txtMaDonVi.Size = new Size(231, 27);
+            txtMaDonVi.TabIndex = 2;
             // 
             // label3
             // 
@@ -219,8 +220,8 @@
         private GroupBox grbDanhSachTaiKhoan;
         private DataGridView dvwDanhSachTaiKhoan;
         private GroupBox groupBox1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtTenDonVi;
+        private TextBox txtMaDonVi;
         private Label label3;
         private Label label2;
     }
