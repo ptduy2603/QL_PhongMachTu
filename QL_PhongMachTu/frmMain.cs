@@ -31,7 +31,6 @@ namespace QL_PhongMachTu
                 btnLapBaoCao.BackColor = Color.LightSlateGray;
             }
             tipTaiKhoan.Text = "Tài Khoản (" + TaiKhoan.tenDangNhap.Trim() + ")";
-
         }
 
         private void tipItemDangXuat_Click(object sender, EventArgs e)
@@ -109,6 +108,27 @@ namespace QL_PhongMachTu
         {
             frmThemTTBenhNhan ThemBenhNhan = new frmThemTTBenhNhan();
             ThemBenhNhan.Show();
+            this.Close();
+        }
+
+        private void thayĐổiQuyĐịnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmThayDoiQuyDinh frmThayDoiQuyDinh = new frmThayDoiQuyDinh();
+            frmThayDoiQuyDinh.Show();
+            this.Close();
+        }
+
+        private void thôngTinLoạiBệnhToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLoaiBenh fLoaiBenh = new frmLoaiBenh();
+            fLoaiBenh.Show();
+            this.Close();
+        }
+
+        private void lậpPhiếuNhậpThuốcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmLapPhieuNhapThuoc fLapPhieuNhapThuoc = new frmLapPhieuNhapThuoc();
+            fLapPhieuNhapThuoc.Show();
             this.Close();
         }
     }

@@ -87,7 +87,6 @@ namespace QL_PhongMachTu
            
 
         }
-
         private void chkShowPassword_CheckedChanged(object sender, EventArgs e)
         {
             // nếu trạng thái là checked thì password được show ra 

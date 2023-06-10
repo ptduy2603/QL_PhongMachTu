@@ -28,346 +28,371 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
-            menuStrip1 = new MenuStrip();
-            tipQLKhamBenh = new ToolStripMenuItem();
-            thêmBệnhNhânToolStripMenuItem = new ToolStripMenuItem();
-            lậpPhiếuKhámBệnhToolStripMenuItem = new ToolStripMenuItem();
-            traCứuBệnhNhânToolStripMenuItem = new ToolStripMenuItem();
-            thôngTinLoạiBệnhToolStripMenuItem = new ToolStripMenuItem();
-            tipQLThuoc = new ToolStripMenuItem();
-            lậpPhiếuNhậpThuốcToolStripMenuItem = new ToolStripMenuItem();
-            xemThôngTinThuốcToolStripMenuItem = new ToolStripMenuItem();
-            xemThôngTinĐơnVịToolStripMenuItem = new ToolStripMenuItem();
-            xemThôngTinCáchDùngToolStripMenuItem = new ToolStripMenuItem();
-            tipLapHoaDon = new ToolStripMenuItem();
-            tipLapBaoCao = new ToolStripMenuItem();
-            lậpBáoCáoDoanhThuThángToolStripMenuItem = new ToolStripMenuItem();
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem = new ToolStripMenuItem();
-            tipAdmin = new ToolStripMenuItem();
-            quảnLýTàiKhoảnToolStripMenuItem = new ToolStripMenuItem();
-            thayĐổiQuyĐịnhToolStripMenuItem = new ToolStripMenuItem();
-            tipTaiKhoan = new ToolStripMenuItem();
-            thayĐổiThôngTinToolStripMenuItem = new ToolStripMenuItem();
-            tipItemDangXuat = new ToolStripMenuItem();
-            tipItemThoat = new ToolStripMenuItem();
-            picQLKhamBenh = new PictureBox();
-            picLapBaoCao = new PictureBox();
-            picQLThuoc = new PictureBox();
-            picLapHoaDon = new PictureBox();
-            btnQLKhamBenh = new Button();
-            btnQLThuoc = new Button();
-            btnLapHoaDon = new Button();
-            btnLapBaoCao = new Button();
-            panel1.SuspendLayout();
-            menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)picQLKhamBenh).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picLapBaoCao).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picQLThuoc).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)picLapHoaDon).BeginInit();
-            SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.tipQLKhamBenh = new System.Windows.Forms.ToolStripMenuItem();
+            this.thêmBệnhNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lậpPhiếuKhámBệnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.traCứuBệnhNhânToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thôngTinLoạiBệnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipQLThuoc = new System.Windows.Forms.ToolStripMenuItem();
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xemThôngTinThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xemThôngTinĐơnVịToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.xemThôngTinCáchDùngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipLapHoaDon = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipLapBaoCao = new System.Windows.Forms.ToolStripMenuItem();
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipAdmin = new System.Windows.Forms.ToolStripMenuItem();
+            this.quảnLýTàiKhoảnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.thayĐổiQuyĐịnhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipTaiKhoan = new System.Windows.Forms.ToolStripMenuItem();
+            this.thayĐổiThôngTinToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipItemDangXuat = new System.Windows.Forms.ToolStripMenuItem();
+            this.tipItemThoat = new System.Windows.Forms.ToolStripMenuItem();
+            this.picQLKhamBenh = new System.Windows.Forms.PictureBox();
+            this.picLapBaoCao = new System.Windows.Forms.PictureBox();
+            this.picQLThuoc = new System.Windows.Forms.PictureBox();
+            this.picLapHoaDon = new System.Windows.Forms.PictureBox();
+            this.btnQLKhamBenh = new System.Windows.Forms.Button();
+            this.btnQLThuoc = new System.Windows.Forms.Button();
+            this.btnLapHoaDon = new System.Windows.Forms.Button();
+            this.btnLapBaoCao = new System.Windows.Forms.Button();
+            this.panel1.SuspendLayout();
+            this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQLKhamBenh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLapBaoCao)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQLThuoc)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLapHoaDon)).BeginInit();
+            this.SuspendLayout();
             // 
             // panel1
             // 
-            panel1.Controls.Add(menuStrip1);
-            panel1.Dock = DockStyle.Top;
-            panel1.Location = new Point(0, 0);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(902, 47);
-            panel1.TabIndex = 0;
+            this.panel1.Controls.Add(this.menuStrip1);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(902, 47);
+            this.panel1.TabIndex = 0;
             // 
             // menuStrip1
             // 
-            menuStrip1.BackColor = SystemColors.MenuHighlight;
-            menuStrip1.Dock = DockStyle.Fill;
-            menuStrip1.ImageScalingSize = new Size(20, 20);
-            menuStrip1.Items.AddRange(new ToolStripItem[] { tipQLKhamBenh, tipQLThuoc, tipLapHoaDon, tipLapBaoCao, tipAdmin, tipTaiKhoan });
-            menuStrip1.Location = new Point(0, 0);
-            menuStrip1.Name = "menuStrip1";
-            menuStrip1.Padding = new Padding(6, 0, 0, 0);
-            menuStrip1.Size = new Size(902, 47);
-            menuStrip1.TabIndex = 0;
-            menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.tipQLKhamBenh,
+            this.tipQLThuoc,
+            this.tipLapHoaDon,
+            this.tipLapBaoCao,
+            this.tipAdmin,
+            this.tipTaiKhoan});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.menuStrip1.Size = new System.Drawing.Size(902, 47);
+            this.menuStrip1.TabIndex = 0;
+            this.menuStrip1.Text = "menuStrip1";
             // 
             // tipQLKhamBenh
             // 
-            tipQLKhamBenh.DropDownItems.AddRange(new ToolStripItem[] { thêmBệnhNhânToolStripMenuItem, lậpPhiếuKhámBệnhToolStripMenuItem, traCứuBệnhNhânToolStripMenuItem, thôngTinLoạiBệnhToolStripMenuItem });
-            tipQLKhamBenh.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipQLKhamBenh.ForeColor = Color.Black;
-            tipQLKhamBenh.Name = "tipQLKhamBenh";
-            tipQLKhamBenh.Size = new Size(180, 47);
-            tipQLKhamBenh.Text = "Quản Lý Khám Bệnh";
+            this.tipQLKhamBenh.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thêmBệnhNhânToolStripMenuItem,
+            this.lậpPhiếuKhámBệnhToolStripMenuItem,
+            this.traCứuBệnhNhânToolStripMenuItem,
+            this.thôngTinLoạiBệnhToolStripMenuItem});
+            this.tipQLKhamBenh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipQLKhamBenh.ForeColor = System.Drawing.Color.Black;
+            this.tipQLKhamBenh.Name = "tipQLKhamBenh";
+            this.tipQLKhamBenh.Size = new System.Drawing.Size(180, 47);
+            this.tipQLKhamBenh.Text = "Quản Lý Khám Bệnh";
             // 
             // thêmBệnhNhânToolStripMenuItem
             // 
-            thêmBệnhNhânToolStripMenuItem.Name = "thêmBệnhNhânToolStripMenuItem";
-            thêmBệnhNhânToolStripMenuItem.Size = new Size(291, 28);
-            thêmBệnhNhânToolStripMenuItem.Text = "Thêm Bệnh Nhân";
-            thêmBệnhNhânToolStripMenuItem.Click += thêmBệnhNhânToolStripMenuItem_Click;
+            this.thêmBệnhNhânToolStripMenuItem.Name = "thêmBệnhNhânToolStripMenuItem";
+            this.thêmBệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.thêmBệnhNhânToolStripMenuItem.Text = "Thêm Bệnh Nhân";
+            this.thêmBệnhNhânToolStripMenuItem.Click += new System.EventHandler(this.thêmBệnhNhânToolStripMenuItem_Click);
             // 
             // lậpPhiếuKhámBệnhToolStripMenuItem
             // 
-            lậpPhiếuKhámBệnhToolStripMenuItem.Name = "lậpPhiếuKhámBệnhToolStripMenuItem";
-            lậpPhiếuKhámBệnhToolStripMenuItem.Size = new Size(291, 28);
-            lậpPhiếuKhámBệnhToolStripMenuItem.Text = "Lập Phiếu Khám Bệnh";
-            lậpPhiếuKhámBệnhToolStripMenuItem.Click += lậpPhiếuKhámBệnhToolStripMenuItem_Click;
+            this.lậpPhiếuKhámBệnhToolStripMenuItem.Name = "lậpPhiếuKhámBệnhToolStripMenuItem";
+            this.lậpPhiếuKhámBệnhToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.lậpPhiếuKhámBệnhToolStripMenuItem.Text = "Lập Phiếu Khám Bệnh";
+            this.lậpPhiếuKhámBệnhToolStripMenuItem.Click += new System.EventHandler(this.lậpPhiếuKhámBệnhToolStripMenuItem_Click);
             // 
             // traCứuBệnhNhânToolStripMenuItem
             // 
-            traCứuBệnhNhânToolStripMenuItem.Name = "traCứuBệnhNhânToolStripMenuItem";
-            traCứuBệnhNhânToolStripMenuItem.Size = new Size(291, 28);
-            traCứuBệnhNhânToolStripMenuItem.Text = "Tra Cứu Bệnh Nhân";
+            this.traCứuBệnhNhânToolStripMenuItem.Name = "traCứuBệnhNhânToolStripMenuItem";
+            this.traCứuBệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.traCứuBệnhNhânToolStripMenuItem.Text = "Tra Cứu Bệnh Nhân";
             // 
             // thôngTinLoạiBệnhToolStripMenuItem
             // 
-            thôngTinLoạiBệnhToolStripMenuItem.Name = "thôngTinLoạiBệnhToolStripMenuItem";
-            thôngTinLoạiBệnhToolStripMenuItem.Size = new Size(291, 28);
-            thôngTinLoạiBệnhToolStripMenuItem.Text = "Xem Thông Tin Loại Bệnh";
+            this.thôngTinLoạiBệnhToolStripMenuItem.Name = "thôngTinLoạiBệnhToolStripMenuItem";
+            this.thôngTinLoạiBệnhToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
+            this.thôngTinLoạiBệnhToolStripMenuItem.Text = "Xem Thông Tin Loại Bệnh";
+            this.thôngTinLoạiBệnhToolStripMenuItem.Click += new System.EventHandler(this.thôngTinLoạiBệnhToolStripMenuItem_Click);
             // 
             // tipQLThuoc
             // 
-            tipQLThuoc.DropDownItems.AddRange(new ToolStripItem[] { lậpPhiếuNhậpThuốcToolStripMenuItem, xemThôngTinThuốcToolStripMenuItem, xemThôngTinĐơnVịToolStripMenuItem, xemThôngTinCáchDùngToolStripMenuItem });
-            tipQLThuoc.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipQLThuoc.Name = "tipQLThuoc";
-            tipQLThuoc.Size = new Size(139, 47);
-            tipQLThuoc.Text = "Quản Lý Thuốc";
+            this.tipQLThuoc.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem,
+            this.xemThôngTinThuốcToolStripMenuItem,
+            this.xemThôngTinĐơnVịToolStripMenuItem,
+            this.xemThôngTinCáchDùngToolStripMenuItem});
+            this.tipQLThuoc.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipQLThuoc.Name = "tipQLThuoc";
+            this.tipQLThuoc.Size = new System.Drawing.Size(139, 47);
+            this.tipQLThuoc.Text = "Quản Lý Thuốc";
             // 
             // lậpPhiếuNhậpThuốcToolStripMenuItem
             // 
-            lậpPhiếuNhậpThuốcToolStripMenuItem.Name = "lậpPhiếuNhậpThuốcToolStripMenuItem";
-            lậpPhiếuNhậpThuốcToolStripMenuItem.Size = new Size(301, 28);
-            lậpPhiếuNhậpThuốcToolStripMenuItem.Text = "Lập Phiếu Nhập Thuốc";
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem.Name = "lậpPhiếuNhậpThuốcToolStripMenuItem";
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem.Size = new System.Drawing.Size(301, 28);
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem.Text = "Lập Phiếu Nhập Thuốc";
+            this.lậpPhiếuNhậpThuốcToolStripMenuItem.Click += new System.EventHandler(this.lậpPhiếuNhậpThuốcToolStripMenuItem_Click);
             // 
             // xemThôngTinThuốcToolStripMenuItem
             // 
-            xemThôngTinThuốcToolStripMenuItem.Name = "xemThôngTinThuốcToolStripMenuItem";
-            xemThôngTinThuốcToolStripMenuItem.Size = new Size(301, 28);
-            xemThôngTinThuốcToolStripMenuItem.Text = "Xem Thông Tin Thuốc";
-            xemThôngTinThuốcToolStripMenuItem.Click += xemThôngTinThuốcToolStripMenuItem_Click;
+            this.xemThôngTinThuốcToolStripMenuItem.Name = "xemThôngTinThuốcToolStripMenuItem";
+            this.xemThôngTinThuốcToolStripMenuItem.Size = new System.Drawing.Size(301, 28);
+            this.xemThôngTinThuốcToolStripMenuItem.Text = "Xem Thông Tin Thuốc";
+            this.xemThôngTinThuốcToolStripMenuItem.Click += new System.EventHandler(this.xemThôngTinThuốcToolStripMenuItem_Click);
             // 
             // xemThôngTinĐơnVịToolStripMenuItem
             // 
-            xemThôngTinĐơnVịToolStripMenuItem.Name = "xemThôngTinĐơnVịToolStripMenuItem";
-            xemThôngTinĐơnVịToolStripMenuItem.Size = new Size(301, 28);
-            xemThôngTinĐơnVịToolStripMenuItem.Text = "Xem Thông Tin Đơn Vị";
-            xemThôngTinĐơnVịToolStripMenuItem.Click += xemThôngTinĐơnVịToolStripMenuItem_Click;
+            this.xemThôngTinĐơnVịToolStripMenuItem.Name = "xemThôngTinĐơnVịToolStripMenuItem";
+            this.xemThôngTinĐơnVịToolStripMenuItem.Size = new System.Drawing.Size(301, 28);
+            this.xemThôngTinĐơnVịToolStripMenuItem.Text = "Xem Thông Tin Đơn Vị";
+            this.xemThôngTinĐơnVịToolStripMenuItem.Click += new System.EventHandler(this.xemThôngTinĐơnVịToolStripMenuItem_Click);
             // 
             // xemThôngTinCáchDùngToolStripMenuItem
             // 
-            xemThôngTinCáchDùngToolStripMenuItem.Name = "xemThôngTinCáchDùngToolStripMenuItem";
-            xemThôngTinCáchDùngToolStripMenuItem.Size = new Size(301, 28);
-            xemThôngTinCáchDùngToolStripMenuItem.Text = "Xem Thông Tin Cách Dùng";
-            xemThôngTinCáchDùngToolStripMenuItem.Click += xemThôngTinCáchDùngToolStripMenuItem_Click;
+            this.xemThôngTinCáchDùngToolStripMenuItem.Name = "xemThôngTinCáchDùngToolStripMenuItem";
+            this.xemThôngTinCáchDùngToolStripMenuItem.Size = new System.Drawing.Size(301, 28);
+            this.xemThôngTinCáchDùngToolStripMenuItem.Text = "Xem Thông Tin Cách Dùng";
+            this.xemThôngTinCáchDùngToolStripMenuItem.Click += new System.EventHandler(this.xemThôngTinCáchDùngToolStripMenuItem_Click);
             // 
             // tipLapHoaDon
             // 
-            tipLapHoaDon.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipLapHoaDon.Name = "tipLapHoaDon";
-            tipLapHoaDon.Size = new Size(125, 47);
-            tipLapHoaDon.Text = "Lập Hóa Đơn";
+            this.tipLapHoaDon.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipLapHoaDon.Name = "tipLapHoaDon";
+            this.tipLapHoaDon.Size = new System.Drawing.Size(125, 47);
+            this.tipLapHoaDon.Text = "Lập Hóa Đơn";
             // 
             // tipLapBaoCao
             // 
-            tipLapBaoCao.DropDownItems.AddRange(new ToolStripItem[] { lậpBáoCáoDoanhThuThángToolStripMenuItem, lậpBáoCáoSửDụngThuốcToolStripMenuItem });
-            tipLapBaoCao.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipLapBaoCao.Name = "tipLapBaoCao";
-            tipLapBaoCao.Size = new Size(120, 47);
-            tipLapBaoCao.Text = "Lập Báo Cáo";
+            this.tipLapBaoCao.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem,
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem});
+            this.tipLapBaoCao.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipLapBaoCao.Name = "tipLapBaoCao";
+            this.tipLapBaoCao.Size = new System.Drawing.Size(120, 47);
+            this.tipLapBaoCao.Text = "Lập Báo Cáo";
             // 
             // lậpBáoCáoDoanhThuThángToolStripMenuItem
             // 
-            lậpBáoCáoDoanhThuThángToolStripMenuItem.BackColor = SystemColors.Control;
-            lậpBáoCáoDoanhThuThángToolStripMenuItem.ForeColor = Color.Black;
-            lậpBáoCáoDoanhThuThángToolStripMenuItem.Name = "lậpBáoCáoDoanhThuThángToolStripMenuItem";
-            lậpBáoCáoDoanhThuThángToolStripMenuItem.Size = new Size(333, 28);
-            lậpBáoCáoDoanhThuThángToolStripMenuItem.Text = "Lập Báo Cáo Doanh Thu Tháng";
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Name = "lậpBáoCáoDoanhThuThángToolStripMenuItem";
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Size = new System.Drawing.Size(333, 28);
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Text = "Lập Báo Cáo Doanh Thu Tháng";
             // 
             // lậpBáoCáoSửDụngThuốcToolStripMenuItem
             // 
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem.BackColor = SystemColors.Control;
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem.ForeColor = Color.Black;
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem.Name = "lậpBáoCáoSửDụngThuốcToolStripMenuItem";
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem.Size = new Size(333, 28);
-            lậpBáoCáoSửDụngThuốcToolStripMenuItem.Text = "Lập Báo Cáo Sử Dụng Thuốc";
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.ForeColor = System.Drawing.Color.Black;
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Name = "lậpBáoCáoSửDụngThuốcToolStripMenuItem";
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Size = new System.Drawing.Size(333, 28);
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Text = "Lập Báo Cáo Sử Dụng Thuốc";
             // 
             // tipAdmin
             // 
-            tipAdmin.DropDownItems.AddRange(new ToolStripItem[] { quảnLýTàiKhoảnToolStripMenuItem, thayĐổiQuyĐịnhToolStripMenuItem });
-            tipAdmin.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipAdmin.Name = "tipAdmin";
-            tipAdmin.Size = new Size(74, 47);
-            tipAdmin.Text = "Admin";
+            this.tipAdmin.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.quảnLýTàiKhoảnToolStripMenuItem,
+            this.thayĐổiQuyĐịnhToolStripMenuItem});
+            this.tipAdmin.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipAdmin.Name = "tipAdmin";
+            this.tipAdmin.Size = new System.Drawing.Size(74, 47);
+            this.tipAdmin.Text = "Admin";
             // 
             // quảnLýTàiKhoảnToolStripMenuItem
             // 
-            quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
-            quảnLýTàiKhoảnToolStripMenuItem.Size = new Size(240, 28);
-            quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
-            quảnLýTàiKhoảnToolStripMenuItem.Click += quảnLýTàiKhoảnToolStripMenuItem_Click;
+            this.quảnLýTàiKhoảnToolStripMenuItem.Name = "quảnLýTàiKhoảnToolStripMenuItem";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Size = new System.Drawing.Size(240, 28);
+            this.quảnLýTàiKhoảnToolStripMenuItem.Text = "Quản Lý Tài Khoản";
+            this.quảnLýTàiKhoảnToolStripMenuItem.Click += new System.EventHandler(this.quảnLýTàiKhoảnToolStripMenuItem_Click);
             // 
             // thayĐổiQuyĐịnhToolStripMenuItem
             // 
-            thayĐổiQuyĐịnhToolStripMenuItem.Name = "thayĐổiQuyĐịnhToolStripMenuItem";
-            thayĐổiQuyĐịnhToolStripMenuItem.Size = new Size(240, 28);
-            thayĐổiQuyĐịnhToolStripMenuItem.Text = "Thay Đổi Quy Định";
+            this.thayĐổiQuyĐịnhToolStripMenuItem.Name = "thayĐổiQuyĐịnhToolStripMenuItem";
+            this.thayĐổiQuyĐịnhToolStripMenuItem.Size = new System.Drawing.Size(240, 28);
+            this.thayĐổiQuyĐịnhToolStripMenuItem.Text = "Thay Đổi Quy Định";
+            this.thayĐổiQuyĐịnhToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiQuyĐịnhToolStripMenuItem_Click);
             // 
             // tipTaiKhoan
             // 
-            tipTaiKhoan.DropDownItems.AddRange(new ToolStripItem[] { thayĐổiThôngTinToolStripMenuItem, tipItemDangXuat, tipItemThoat });
-            tipTaiKhoan.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point);
-            tipTaiKhoan.Name = "tipTaiKhoan";
-            tipTaiKhoan.Size = new Size(163, 47);
-            tipTaiKhoan.Text = "Tài Khoản (admin)";
+            this.tipTaiKhoan.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.thayĐổiThôngTinToolStripMenuItem,
+            this.tipItemDangXuat,
+            this.tipItemThoat});
+            this.tipTaiKhoan.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tipTaiKhoan.Name = "tipTaiKhoan";
+            this.tipTaiKhoan.Size = new System.Drawing.Size(163, 47);
+            this.tipTaiKhoan.Text = "Tài Khoản (admin)";
             // 
             // thayĐổiThôngTinToolStripMenuItem
             // 
-            thayĐổiThôngTinToolStripMenuItem.Name = "thayĐổiThôngTinToolStripMenuItem";
-            thayĐổiThôngTinToolStripMenuItem.Size = new Size(244, 28);
-            thayĐổiThôngTinToolStripMenuItem.Text = "Thay Đổi Thông Tin";
-            thayĐổiThôngTinToolStripMenuItem.Click += thayĐổiThôngTinToolStripMenuItem_Click;
+            this.thayĐổiThôngTinToolStripMenuItem.Name = "thayĐổiThôngTinToolStripMenuItem";
+            this.thayĐổiThôngTinToolStripMenuItem.Size = new System.Drawing.Size(244, 28);
+            this.thayĐổiThôngTinToolStripMenuItem.Text = "Thay Đổi Thông Tin";
+            this.thayĐổiThôngTinToolStripMenuItem.Click += new System.EventHandler(this.thayĐổiThôngTinToolStripMenuItem_Click);
             // 
             // tipItemDangXuat
             // 
-            tipItemDangXuat.Name = "tipItemDangXuat";
-            tipItemDangXuat.Size = new Size(244, 28);
-            tipItemDangXuat.Text = "Đăng Xuất";
-            tipItemDangXuat.Click += tipItemDangXuat_Click;
+            this.tipItemDangXuat.Name = "tipItemDangXuat";
+            this.tipItemDangXuat.Size = new System.Drawing.Size(244, 28);
+            this.tipItemDangXuat.Text = "Đăng Xuất";
+            this.tipItemDangXuat.Click += new System.EventHandler(this.tipItemDangXuat_Click);
             // 
             // tipItemThoat
             // 
-            tipItemThoat.Name = "tipItemThoat";
-            tipItemThoat.Size = new Size(244, 28);
-            tipItemThoat.Text = "Thoát";
-            tipItemThoat.Click += tipItemThoat_Click;
+            this.tipItemThoat.Name = "tipItemThoat";
+            this.tipItemThoat.Size = new System.Drawing.Size(244, 28);
+            this.tipItemThoat.Text = "Thoát";
+            this.tipItemThoat.Click += new System.EventHandler(this.tipItemThoat_Click);
             // 
             // picQLKhamBenh
             // 
-            picQLKhamBenh.BorderStyle = BorderStyle.Fixed3D;
-            picQLKhamBenh.Image = Properties.Resources.KhamBenh;
-            picQLKhamBenh.Location = new Point(154, 92);
-            picQLKhamBenh.Name = "picQLKhamBenh";
-            picQLKhamBenh.Size = new Size(221, 184);
-            picQLKhamBenh.SizeMode = PictureBoxSizeMode.StretchImage;
-            picQLKhamBenh.TabIndex = 1;
-            picQLKhamBenh.TabStop = false;
+            this.picQLKhamBenh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picQLKhamBenh.Image = global::QL_PhongMachTu.Properties.Resources.KhamBenh;
+            this.picQLKhamBenh.Location = new System.Drawing.Point(154, 92);
+            this.picQLKhamBenh.Name = "picQLKhamBenh";
+            this.picQLKhamBenh.Size = new System.Drawing.Size(221, 184);
+            this.picQLKhamBenh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQLKhamBenh.TabIndex = 1;
+            this.picQLKhamBenh.TabStop = false;
             // 
             // picLapBaoCao
             // 
-            picLapBaoCao.Image = Properties.Resources.report;
-            picLapBaoCao.Location = new Point(537, 378);
-            picLapBaoCao.Name = "picLapBaoCao";
-            picLapBaoCao.Size = new Size(221, 184);
-            picLapBaoCao.SizeMode = PictureBoxSizeMode.StretchImage;
-            picLapBaoCao.TabIndex = 2;
-            picLapBaoCao.TabStop = false;
+            this.picLapBaoCao.Image = global::QL_PhongMachTu.Properties.Resources.report;
+            this.picLapBaoCao.Location = new System.Drawing.Point(537, 378);
+            this.picLapBaoCao.Name = "picLapBaoCao";
+            this.picLapBaoCao.Size = new System.Drawing.Size(221, 184);
+            this.picLapBaoCao.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLapBaoCao.TabIndex = 2;
+            this.picLapBaoCao.TabStop = false;
             // 
             // picQLThuoc
             // 
-            picQLThuoc.BorderStyle = BorderStyle.Fixed3D;
-            picQLThuoc.Image = Properties.Resources.Medicine;
-            picQLThuoc.Location = new Point(537, 92);
-            picQLThuoc.Name = "picQLThuoc";
-            picQLThuoc.Size = new Size(221, 184);
-            picQLThuoc.SizeMode = PictureBoxSizeMode.StretchImage;
-            picQLThuoc.TabIndex = 3;
-            picQLThuoc.TabStop = false;
+            this.picQLThuoc.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picQLThuoc.Image = global::QL_PhongMachTu.Properties.Resources.Medicine;
+            this.picQLThuoc.Location = new System.Drawing.Point(537, 92);
+            this.picQLThuoc.Name = "picQLThuoc";
+            this.picQLThuoc.Size = new System.Drawing.Size(221, 184);
+            this.picQLThuoc.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picQLThuoc.TabIndex = 3;
+            this.picQLThuoc.TabStop = false;
             // 
             // picLapHoaDon
             // 
-            picLapHoaDon.BorderStyle = BorderStyle.Fixed3D;
-            picLapHoaDon.Image = Properties.Resources.invoice1;
-            picLapHoaDon.Location = new Point(154, 378);
-            picLapHoaDon.Name = "picLapHoaDon";
-            picLapHoaDon.Size = new Size(221, 184);
-            picLapHoaDon.SizeMode = PictureBoxSizeMode.StretchImage;
-            picLapHoaDon.TabIndex = 4;
-            picLapHoaDon.TabStop = false;
+            this.picLapHoaDon.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.picLapHoaDon.Image = global::QL_PhongMachTu.Properties.Resources.invoice1;
+            this.picLapHoaDon.Location = new System.Drawing.Point(154, 378);
+            this.picLapHoaDon.Name = "picLapHoaDon";
+            this.picLapHoaDon.Size = new System.Drawing.Size(221, 184);
+            this.picLapHoaDon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLapHoaDon.TabIndex = 4;
+            this.picLapHoaDon.TabStop = false;
             // 
             // btnQLKhamBenh
             // 
-            btnQLKhamBenh.BackColor = SystemColors.MenuHighlight;
-            btnQLKhamBenh.Cursor = Cursors.Hand;
-            btnQLKhamBenh.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnQLKhamBenh.ForeColor = Color.White;
-            btnQLKhamBenh.Location = new Point(153, 282);
-            btnQLKhamBenh.Name = "btnQLKhamBenh";
-            btnQLKhamBenh.Size = new Size(221, 44);
-            btnQLKhamBenh.TabIndex = 5;
-            btnQLKhamBenh.Text = "Quản Lý Khám Bệnh";
-            btnQLKhamBenh.UseVisualStyleBackColor = false;
-            btnQLKhamBenh.Click += btnQLKhamBenh_Click;
+            this.btnQLKhamBenh.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnQLKhamBenh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLKhamBenh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQLKhamBenh.ForeColor = System.Drawing.Color.White;
+            this.btnQLKhamBenh.Location = new System.Drawing.Point(153, 282);
+            this.btnQLKhamBenh.Name = "btnQLKhamBenh";
+            this.btnQLKhamBenh.Size = new System.Drawing.Size(221, 44);
+            this.btnQLKhamBenh.TabIndex = 5;
+            this.btnQLKhamBenh.Text = "Quản Lý Khám Bệnh";
+            this.btnQLKhamBenh.UseVisualStyleBackColor = false;
+            this.btnQLKhamBenh.Click += new System.EventHandler(this.btnQLKhamBenh_Click);
             // 
             // btnQLThuoc
             // 
-            btnQLThuoc.BackColor = SystemColors.MenuHighlight;
-            btnQLThuoc.Cursor = Cursors.Hand;
-            btnQLThuoc.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnQLThuoc.ForeColor = Color.White;
-            btnQLThuoc.Location = new Point(537, 282);
-            btnQLThuoc.Name = "btnQLThuoc";
-            btnQLThuoc.Size = new Size(221, 44);
-            btnQLThuoc.TabIndex = 6;
-            btnQLThuoc.Text = "Quản Lý Thuốc";
-            btnQLThuoc.UseVisualStyleBackColor = false;
-            btnQLThuoc.Click += btnQLThuoc_Click;
+            this.btnQLThuoc.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnQLThuoc.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQLThuoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnQLThuoc.ForeColor = System.Drawing.Color.White;
+            this.btnQLThuoc.Location = new System.Drawing.Point(537, 282);
+            this.btnQLThuoc.Name = "btnQLThuoc";
+            this.btnQLThuoc.Size = new System.Drawing.Size(221, 44);
+            this.btnQLThuoc.TabIndex = 6;
+            this.btnQLThuoc.Text = "Quản Lý Thuốc";
+            this.btnQLThuoc.UseVisualStyleBackColor = false;
+            this.btnQLThuoc.Click += new System.EventHandler(this.btnQLThuoc_Click);
             // 
             // btnLapHoaDon
             // 
-            btnLapHoaDon.BackColor = SystemColors.MenuHighlight;
-            btnLapHoaDon.Cursor = Cursors.Hand;
-            btnLapHoaDon.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLapHoaDon.ForeColor = Color.White;
-            btnLapHoaDon.Location = new Point(153, 568);
-            btnLapHoaDon.Name = "btnLapHoaDon";
-            btnLapHoaDon.Size = new Size(221, 44);
-            btnLapHoaDon.TabIndex = 7;
-            btnLapHoaDon.Text = "Lập Hóa Đơn";
-            btnLapHoaDon.UseVisualStyleBackColor = false;
+            this.btnLapHoaDon.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLapHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLapHoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLapHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnLapHoaDon.Location = new System.Drawing.Point(153, 568);
+            this.btnLapHoaDon.Name = "btnLapHoaDon";
+            this.btnLapHoaDon.Size = new System.Drawing.Size(221, 44);
+            this.btnLapHoaDon.TabIndex = 7;
+            this.btnLapHoaDon.Text = "Lập Hóa Đơn";
+            this.btnLapHoaDon.UseVisualStyleBackColor = false;
             // 
             // btnLapBaoCao
             // 
-            btnLapBaoCao.BackColor = SystemColors.MenuHighlight;
-            btnLapBaoCao.Cursor = Cursors.Hand;
-            btnLapBaoCao.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnLapBaoCao.ForeColor = Color.White;
-            btnLapBaoCao.Location = new Point(537, 568);
-            btnLapBaoCao.Name = "btnLapBaoCao";
-            btnLapBaoCao.Size = new Size(221, 44);
-            btnLapBaoCao.TabIndex = 8;
-            btnLapBaoCao.Text = "Lập Báo Cáo";
-            btnLapBaoCao.UseVisualStyleBackColor = false;
+            this.btnLapBaoCao.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnLapBaoCao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLapBaoCao.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLapBaoCao.ForeColor = System.Drawing.Color.White;
+            this.btnLapBaoCao.Location = new System.Drawing.Point(537, 568);
+            this.btnLapBaoCao.Name = "btnLapBaoCao";
+            this.btnLapBaoCao.Size = new System.Drawing.Size(221, 44);
+            this.btnLapBaoCao.TabIndex = 8;
+            this.btnLapBaoCao.Text = "Lập Báo Cáo";
+            this.btnLapBaoCao.UseVisualStyleBackColor = false;
             // 
             // frmMain
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
-            ClientSize = new Size(902, 652);
-            Controls.Add(btnLapBaoCao);
-            Controls.Add(btnLapHoaDon);
-            Controls.Add(btnQLThuoc);
-            Controls.Add(btnQLKhamBenh);
-            Controls.Add(picLapHoaDon);
-            Controls.Add(picQLThuoc);
-            Controls.Add(picLapBaoCao);
-            Controls.Add(picQLKhamBenh);
-            Controls.Add(panel1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MainMenuStrip = menuStrip1;
-            MaximizeBox = false;
-            Name = "frmMain";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Trang Chủ";
-            Load += frmMain_Load;
-            panel1.ResumeLayout(false);
-            panel1.PerformLayout();
-            menuStrip1.ResumeLayout(false);
-            menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)picQLKhamBenh).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picLapBaoCao).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picQLThuoc).EndInit();
-            ((System.ComponentModel.ISupportInitialize)picLapHoaDon).EndInit();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(902, 652);
+            this.Controls.Add(this.btnLapBaoCao);
+            this.Controls.Add(this.btnLapHoaDon);
+            this.Controls.Add(this.btnQLThuoc);
+            this.Controls.Add(this.btnQLKhamBenh);
+            this.Controls.Add(this.picLapHoaDon);
+            this.Controls.Add(this.picQLThuoc);
+            this.Controls.Add(this.picLapBaoCao);
+            this.Controls.Add(this.picQLKhamBenh);
+            this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MainMenuStrip = this.menuStrip1;
+            this.MaximizeBox = false;
+            this.Name = "frmMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Trang Chủ";
+            this.Load += new System.EventHandler(this.frmMain_Load);
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picQLKhamBenh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLapBaoCao)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picQLThuoc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLapHoaDon)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -2,13 +2,24 @@
 go
 
 -- viết các store procedure cho việc quản lí bệnh nhân 
--- lấy tất cả thông tin bênh nhân 
+-- Lấp ra tất cả các bệnh nhân
 CREATE PROC spGetAllPatient
 as
 begin
 	select * from BENHNHAN
 end
 go
+
+-- Lấy ra các bệnh nhân chưa khám bệnh trong ngày khám truyền vào 
+CREATE PROC spGetPatientWithNgayKham
+@NgayKham smalldatetime
+as
+begin
+	select * from BENHNHAN
+	WHERE MaBN not in (SELECT MaBN from PHIEUKHAMBENH where NgayKham = @NgayKham)
+end
+go
+
 -- Thêm một bệnh nhân mới vào data
 CREATE PROC spAddPatient
 @MaBN char(5),

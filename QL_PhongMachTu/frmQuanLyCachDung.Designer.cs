@@ -30,18 +30,18 @@
         {
             label1 = new Label();
             grbDanhSachTaiKhoan = new GroupBox();
-            dvwDanhSachTaiKhoan = new DataGridView();
+            dvwDanhSachCachDung = new DataGridView();
             btnThoat = new Button();
             btnSua = new Button();
             btnXoa = new Button();
             btnThem = new Button();
             groupBox1 = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtTenCachDung = new TextBox();
+            txtMaCachDung = new TextBox();
             label3 = new Label();
             label2 = new Label();
             grbDanhSachTaiKhoan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dvwDanhSachTaiKhoan).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dvwDanhSachCachDung).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -60,27 +60,28 @@
             // 
             // grbDanhSachTaiKhoan
             // 
-            grbDanhSachTaiKhoan.Controls.Add(dvwDanhSachTaiKhoan);
+            grbDanhSachTaiKhoan.Controls.Add(dvwDanhSachCachDung);
             grbDanhSachTaiKhoan.Location = new Point(3, 198);
             grbDanhSachTaiKhoan.Name = "grbDanhSachTaiKhoan";
             grbDanhSachTaiKhoan.Size = new Size(465, 241);
             grbDanhSachTaiKhoan.TabIndex = 21;
             grbDanhSachTaiKhoan.TabStop = false;
-            grbDanhSachTaiKhoan.Text = "Danh Sách Đơn Vị";
+            grbDanhSachTaiKhoan.Text = "Danh Sách Cách Dùng";
             // 
-            // dvwDanhSachTaiKhoan
+            // dvwDanhSachCachDung
             // 
-            dvwDanhSachTaiKhoan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dvwDanhSachTaiKhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvwDanhSachTaiKhoan.Dock = DockStyle.Fill;
-            dvwDanhSachTaiKhoan.Location = new Point(3, 23);
-            dvwDanhSachTaiKhoan.Name = "dvwDanhSachTaiKhoan";
-            dvwDanhSachTaiKhoan.ReadOnly = true;
-            dvwDanhSachTaiKhoan.RowHeadersWidth = 51;
-            dvwDanhSachTaiKhoan.RowTemplate.Height = 29;
-            dvwDanhSachTaiKhoan.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dvwDanhSachTaiKhoan.Size = new Size(459, 215);
-            dvwDanhSachTaiKhoan.TabIndex = 0;
+            dvwDanhSachCachDung.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dvwDanhSachCachDung.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvwDanhSachCachDung.Dock = DockStyle.Fill;
+            dvwDanhSachCachDung.Location = new Point(3, 23);
+            dvwDanhSachCachDung.Name = "dvwDanhSachCachDung";
+            dvwDanhSachCachDung.ReadOnly = true;
+            dvwDanhSachCachDung.RowHeadersWidth = 51;
+            dvwDanhSachCachDung.RowTemplate.Height = 29;
+            dvwDanhSachCachDung.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dvwDanhSachCachDung.Size = new Size(459, 215);
+            dvwDanhSachCachDung.TabIndex = 0;
+            dvwDanhSachCachDung.CellClick += dvwDanhSachCachDung_CellClick;
             // 
             // btnThoat
             // 
@@ -108,6 +109,7 @@
             btnSua.TabIndex = 19;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -121,6 +123,7 @@
             btnXoa.TabIndex = 18;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnThem
             // 
@@ -134,11 +137,12 @@
             btnThem.TabIndex = 17;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtTenCachDung);
+            groupBox1.Controls.Add(txtMaCachDung);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(8, 52);
@@ -149,21 +153,21 @@
             groupBox1.Text = "Nhập Cách Dùng";
             groupBox1.Enter += groupBox1_Enter;
             // 
-            // textBox2
+            // txtTenCachDung
             // 
-            textBox2.BackColor = SystemColors.Info;
-            textBox2.Location = new Point(475, 87);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(231, 27);
-            textBox2.TabIndex = 7;
+            txtTenCachDung.BackColor = SystemColors.Info;
+            txtTenCachDung.Location = new Point(475, 87);
+            txtTenCachDung.Name = "txtTenCachDung";
+            txtTenCachDung.Size = new Size(231, 27);
+            txtTenCachDung.TabIndex = 7;
             // 
-            // textBox1
+            // txtMaCachDung
             // 
-            textBox1.BackColor = SystemColors.Info;
-            textBox1.Location = new Point(51, 87);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 27);
-            textBox1.TabIndex = 6;
+            txtMaCachDung.BackColor = SystemColors.Info;
+            txtMaCachDung.Location = new Point(51, 87);
+            txtMaCachDung.Name = "txtMaCachDung";
+            txtMaCachDung.Size = new Size(231, 27);
+            txtMaCachDung.TabIndex = 6;
             // 
             // label3
             // 
@@ -202,7 +206,7 @@
             StartPosition = FormStartPosition.CenterScreen;
             Text = "frmQuanLyCachDung";
             grbDanhSachTaiKhoan.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dvwDanhSachTaiKhoan).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dvwDanhSachCachDung).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -212,14 +216,14 @@
 
         private Label label1;
         private GroupBox grbDanhSachTaiKhoan;
-        private DataGridView dvwDanhSachTaiKhoan;
+        private DataGridView dvwDanhSachCachDung;
         private Button btnThoat;
         private Button btnSua;
         private Button btnXoa;
         private Button btnThem;
         private GroupBox groupBox1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtTenCachDung;
+        private TextBox txtMaCachDung;
         private Label label3;
         private Label label2;
     }

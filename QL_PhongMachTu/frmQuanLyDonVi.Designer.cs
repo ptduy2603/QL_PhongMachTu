@@ -34,14 +34,14 @@
             btnXoa = new Button();
             btnThem = new Button();
             grbDanhSachTaiKhoan = new GroupBox();
-            dvwDanhSachTaiKhoan = new DataGridView();
+            dvwDanhSachDonVi = new DataGridView();
             groupBox1 = new GroupBox();
-            textBox2 = new TextBox();
-            textBox1 = new TextBox();
+            txtTenDonVi = new TextBox();
+            txtMaDonVi = new TextBox();
             label3 = new Label();
             label2 = new Label();
             grbDanhSachTaiKhoan.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dvwDanhSachTaiKhoan).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dvwDanhSachDonVi).BeginInit();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -84,6 +84,7 @@
             btnSua.TabIndex = 14;
             btnSua.Text = "Sửa";
             btnSua.UseVisualStyleBackColor = false;
+            btnSua.Click += btnSua_Click;
             // 
             // btnXoa
             // 
@@ -97,6 +98,7 @@
             btnXoa.TabIndex = 13;
             btnXoa.Text = "Xóa";
             btnXoa.UseVisualStyleBackColor = false;
+            btnXoa.Click += btnXoa_Click;
             // 
             // btnThem
             // 
@@ -110,10 +112,11 @@
             btnThem.TabIndex = 12;
             btnThem.Text = "Thêm";
             btnThem.UseVisualStyleBackColor = false;
+            btnThem.Click += btnThem_Click;
             // 
             // grbDanhSachTaiKhoan
             // 
-            grbDanhSachTaiKhoan.Controls.Add(dvwDanhSachTaiKhoan);
+            grbDanhSachTaiKhoan.Controls.Add(dvwDanhSachDonVi);
             grbDanhSachTaiKhoan.Location = new Point(12, 201);
             grbDanhSachTaiKhoan.Name = "grbDanhSachTaiKhoan";
             grbDanhSachTaiKhoan.Size = new Size(465, 241);
@@ -121,25 +124,26 @@
             grbDanhSachTaiKhoan.TabStop = false;
             grbDanhSachTaiKhoan.Text = "Danh Sách Đơn Vị";
             // 
-            // dvwDanhSachTaiKhoan
+            // dvwDanhSachDonVi
             // 
-            dvwDanhSachTaiKhoan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dvwDanhSachTaiKhoan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dvwDanhSachTaiKhoan.Dock = DockStyle.Fill;
-            dvwDanhSachTaiKhoan.Location = new Point(3, 23);
-            dvwDanhSachTaiKhoan.Name = "dvwDanhSachTaiKhoan";
-            dvwDanhSachTaiKhoan.ReadOnly = true;
-            dvwDanhSachTaiKhoan.RowHeadersWidth = 51;
-            dvwDanhSachTaiKhoan.RowTemplate.Height = 29;
-            dvwDanhSachTaiKhoan.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dvwDanhSachTaiKhoan.Size = new Size(459, 215);
-            dvwDanhSachTaiKhoan.TabIndex = 0;
+            dvwDanhSachDonVi.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dvwDanhSachDonVi.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dvwDanhSachDonVi.Dock = DockStyle.Fill;
+            dvwDanhSachDonVi.Location = new Point(3, 23);
+            dvwDanhSachDonVi.Name = "dvwDanhSachDonVi";
+            dvwDanhSachDonVi.ReadOnly = true;
+            dvwDanhSachDonVi.RowHeadersWidth = 51;
+            dvwDanhSachDonVi.RowTemplate.Height = 29;
+            dvwDanhSachDonVi.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dvwDanhSachDonVi.Size = new Size(459, 215);
+            dvwDanhSachDonVi.TabIndex = 0;
+            dvwDanhSachDonVi.CellClick += dvwDanhSachTaiKhoan_CellClick;
             // 
             // groupBox1
             // 
             groupBox1.BackColor = Color.White;
-            groupBox1.Controls.Add(textBox2);
-            groupBox1.Controls.Add(textBox1);
+            groupBox1.Controls.Add(txtTenDonVi);
+            groupBox1.Controls.Add(txtMaDonVi);
             groupBox1.Controls.Add(label3);
             groupBox1.Controls.Add(label2);
             groupBox1.Location = new Point(12, 55);
@@ -149,21 +153,21 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "Nhập Đơn Vị";
             // 
-            // textBox2
+            // txtTenDonVi
             // 
-            textBox2.BackColor = SystemColors.Menu;
-            textBox2.Location = new Point(455, 88);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(231, 27);
-            textBox2.TabIndex = 3;
+            txtTenDonVi.BackColor = SystemColors.Menu;
+            txtTenDonVi.Location = new Point(455, 88);
+            txtTenDonVi.Name = "txtTenDonVi";
+            txtTenDonVi.Size = new Size(231, 27);
+            txtTenDonVi.TabIndex = 3;
             // 
-            // textBox1
+            // txtMaDonVi
             // 
-            textBox1.BackColor = SystemColors.Menu;
-            textBox1.Location = new Point(31, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 27);
-            textBox1.TabIndex = 2;
+            txtMaDonVi.BackColor = SystemColors.Menu;
+            txtMaDonVi.Location = new Point(31, 88);
+            txtMaDonVi.Name = "txtMaDonVi";
+            txtMaDonVi.Size = new Size(231, 27);
+            txtMaDonVi.TabIndex = 2;
             // 
             // label3
             // 
@@ -203,7 +207,7 @@
             Text = "frmQuanLyDonVi";
             Load += frmQuanLyDonVi_Load;
             grbDanhSachTaiKhoan.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dvwDanhSachTaiKhoan).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dvwDanhSachDonVi).EndInit();
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
             ResumeLayout(false);
@@ -217,10 +221,10 @@
         private Button btnXoa;
         private Button btnThem;
         private GroupBox grbDanhSachTaiKhoan;
-        private DataGridView dvwDanhSachTaiKhoan;
+        private DataGridView dvwDanhSachDonVi;
         private GroupBox groupBox1;
-        private TextBox textBox2;
-        private TextBox textBox1;
+        private TextBox txtTenDonVi;
+        private TextBox txtMaDonVi;
         private Label label3;
         private Label label2;
     }

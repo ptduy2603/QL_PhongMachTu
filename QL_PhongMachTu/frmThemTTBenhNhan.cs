@@ -43,6 +43,7 @@ namespace QL_PhongMachTu
             dgvDanhSachBenhNhan.Columns[2].Width = 50;
             dgvDanhSachBenhNhan.Columns[3].HeaderText = "Năm Sinh";
             dgvDanhSachBenhNhan.Columns[4].HeaderText = "Địa Chỉ";
+            dgvDanhSachBenhNhan.ClearSelection();
         }
 
         // hàm dùng để reset lại data
@@ -283,19 +284,9 @@ namespace QL_PhongMachTu
 
         private void btnLapPhieuKham_Click(object sender, EventArgs e)
         {
-            if(dgvDanhSachBenhNhan.CurrentRow == null)
-            {
-                // nếu chưa chọn bệnh nhân để lập phiếu thì yêu cầu phải chọn bệnh nhân
-                MessageBox.Show("Vui lòng chọn bệnh nhân để lập phiếu khám", "Thông báo", MessageBoxButtons.OK);
-            }    
-            else
-            {
-                BenhNhan bn = new BenhNhan(txtMaBenhNhan.Text.Trim(), txtTenBenhNhan.Text.Trim(), chkNam.Checked ? "Nam" : "Nu", Convert.ToInt32(txtNamSinh.Text.Trim()), txtDiaChi.Text.Trim());
-                frmLapPhieuKham fLapPhieuKham = new frmLapPhieuKham(bn);
-                fLapPhieuKham.Show();
-                this.Hide();
-            }
-
+            frmLapPhieuKham fLapPhieuKham = new frmLapPhieuKham();
+            fLapPhieuKham.Show();
+            this.Close();
         }
     }
 }
