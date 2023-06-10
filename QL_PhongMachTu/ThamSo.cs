@@ -13,6 +13,7 @@ namespace QL_PhongMachTu
         public static int getTienKham()
         {
             SqlConnection con = Connection.getConnection();
+            con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select GiaTri from THAMSO where TenThamSo = 'TienKhamCoBan'";
             cmd.Connection = con;
@@ -24,6 +25,7 @@ namespace QL_PhongMachTu
         public static int getBenhNhanToiDa()
         {
             SqlConnection con = Connection.getConnection();
+            con.Open();
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = "select GiaTri from THAMSO where TenThamSo = 'SoBenhNhanToiDa'";
             cmd.Connection = con;

@@ -76,9 +76,10 @@ namespace QL_PhongMachTu
         public string maPhieuKham { get; set; }
         public DateTime ngayKham { get; set; }
         public string maBenhNhan { get; set; }
-        public string maLoaiBenh { get; set; }  
+        public string maLoaiBenh { get; set; }
+
         public string trieuChung { get; set; }
         public int tienThuoc { get; set; }
-        
+              
     }
 }

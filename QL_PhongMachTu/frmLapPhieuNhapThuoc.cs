@@ -207,34 +207,7 @@ namespace QL_PhongMachTu
             txtDonGiaNhap.Text = Convert.ToString(dgvDanhSachThuoc.CurrentRow.Cells[2].Value);
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
-        {
-            // sự kiện xóa một loại thuốc ra khỏi danh sách dự định thuốc
-            if(dgvDanhSachThuoc.CurrentRow == null)
-            {
-                MessageBox.Show("Vui lòng chọn thuốc cần xóa", "Thông báo", MessageBoxButtons.OK);
-            }    
-            else
-            {
-                for (int i = 0; i < chiTietPN.Count; i++)
-                {
-                    if (chiTietPN[i].maLoaiThuoc == cboTenThuoc.SelectedValue.ToString())
-                    {
-                        chiTietPN.RemoveAt(i);
-                        dgvDanhSachThuoc.Rows.RemoveAt(i);
-                        cboTenThuoc.SelectedIndex = 0;
-                        txtDonGiaNhap.Text = "";
-                        nudSoLuongNhap.Value = 0;
-                        // cập nhật lại tổng tiền nhập thuốc
-                        tinhTongTien();
-                        return;
-                    }
-                }
-
-                MessageBox.Show("Không tìm thấy loại thuốc này", "Thông báo", MessageBoxButtons.OK);
-            }
-        }
-
+      
         private void btnSua_Click(object sender, EventArgs e)
         {
             if(checkData())
@@ -253,7 +226,7 @@ namespace QL_PhongMachTu
                     }   
                 }
 
-                MessageBox.Show("Không tìm thấy loại thuốc này", "Thông báo", MessageBoxButtons.OK);
+                MessageBox.Show("Không tìm thấy thuốc cần sửa", "Thông báo", MessageBoxButtons.OK);
             }    
         }
 
@@ -330,6 +303,33 @@ namespace QL_PhongMachTu
             frmQuanLyThuoc fQuanLyThuoc = new frmQuanLyThuoc();
             fQuanLyThuoc.Show();
             this.Close();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            if(dgvDanhSachPhieuNhapThuoc.Rows.Count == 0)
+            {
+                MessageBox.Show("Chưa chọn thuốc", "Thông báo", MessageBoxButtons.OK);
+            }    
+            else
+            {
+                for(int i = 0; i < chiTietPN.Count; i++)
+                {
+                    if (chiTietPN[i].maLoaiThuoc == cboTenThuoc.SelectedValue.ToString())
+                    {
+                        chiTietPN.RemoveAt(i);
+                        dgvDanhSachThuoc.Rows.RemoveAt(i);
+                        tinhTongTien();
+                        cboTenThuoc.SelectedIndex = 0;
+                        nudSoLuongNhap.Value = 0;
+                        txtDonGiaNhap.Text = "";
+                        MessageBox.Show("Xóa thuốc thành công", "Thông báo", MessageBoxButtons.OK);
+                        return;
+                    }    
+                }
+
+                MessageBox.Show("Không tìm thấy thuốc cần xóa", "Thông báo", MessageBoxButtons.OK);
+            }
         }
     }
 }

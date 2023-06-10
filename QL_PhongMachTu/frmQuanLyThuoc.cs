@@ -88,13 +88,35 @@ namespace QL_PhongMachTu
                 return false;
             }
 
-            int gia;
-            bool check = int.TryParse(txtGiaBan.Text.Trim(), out gia);
-            if(check == false || gia <= 0)
+            int giaBan;
+            bool check = int.TryParse(txtGiaBan.Text.Trim(), out giaBan);
+            if(check == false || giaBan <= 0)
             {
                 errorProvider.SetError(txtGiaBan, "Giá bán không hợp lệ");
                 return false;
-            }    
+            }  
+            else
+            {
+                // check xem giá bán thay đổi có lớn hơn hoặc bằng giá nhập hay không
+                SqlConnection con = Connection.getConnection();
+                con.Open();
+                SqlCommand cmd = new SqlCommand()
+                {
+                    CommandType = CommandType.StoredProcedure,
+                    Connection = con,
+                    CommandText = "spCheckDonGiaBan"
+                };
+                cmd.Parameters.AddWithValue("@DonGiaBan", giaBan);
+                cmd.Parameters.AddWithValue("@MaLT", txtMaThuoc.Text.Trim());
+                object result = cmd.ExecuteScalar();
+                con.Close();
+                int code = Convert.ToInt32(result);
+                if(code == 0) 
+                {
+                    errorProvider.SetError(txtGiaBan, "Giá bán nhỏ hơn giá nhập thuốc hiện tại!");
+                    return false;
+                }    
+            }
             
             return true;
         }

@@ -54,11 +54,11 @@
             this.btnLapPhieu = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnReset = new System.Windows.Forms.Button();
             this.btnXemThongTinThuoc = new System.Windows.Forms.Button();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.btnXoa = new System.Windows.Forms.Button();
             this.grbThongTinPhieuLapThuoc.SuspendLayout();
             this.grbThongTinThuoc.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudSoLuongNhap)).BeginInit();
@@ -186,6 +186,11 @@
             // nudSoLuongNhap
             // 
             this.nudSoLuongNhap.Location = new System.Drawing.Point(243, 83);
+            this.nudSoLuongNhap.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
             this.nudSoLuongNhap.Name = "nudSoLuongNhap";
             this.nudSoLuongNhap.Size = new System.Drawing.Size(241, 30);
             this.nudSoLuongNhap.TabIndex = 3;
@@ -335,20 +340,6 @@
             this.btnThem.UseVisualStyleBackColor = false;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnXoa
-            // 
-            this.btnXoa.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnXoa.ForeColor = System.Drawing.Color.White;
-            this.btnXoa.Location = new System.Drawing.Point(927, 199);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(112, 41);
-            this.btnXoa.TabIndex = 8;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = false;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
             // btnSua
             // 
             this.btnSua.BackColor = System.Drawing.SystemColors.MenuHighlight;
@@ -395,16 +386,30 @@
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // btnXoa
+            // 
+            this.btnXoa.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(927, 200);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(112, 41);
+            this.btnXoa.TabIndex = 12;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
+            // 
             // frmLapPhieuNhapThuoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1055, 771);
+            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnXemThongTinThuoc);
             this.Controls.Add(this.btnReset);
             this.Controls.Add(this.btnLapPhieu);
             this.Controls.Add(this.btnSua);
-            this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.grbDanhSachThuoc);
@@ -456,7 +461,6 @@
         private DataGridView dgvDanhSachPhieuNhapThuoc;
         private DataGridView dgvDanhSachThuoc;
         private Button btnThem;
-        private Button btnXoa;
         private Button btnSua;
         private Button btnReset;
         private DataGridViewTextBoxColumn LoaiThuoc;
@@ -464,5 +468,6 @@
         private DataGridViewTextBoxColumn DonGiaNhap;
         private Button btnXemThongTinThuoc;
         private ErrorProvider errorProvider;
+        private Button btnXoa;
     }
 }

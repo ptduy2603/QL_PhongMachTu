@@ -59,25 +59,25 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.dtvQuyDinh);
-            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.groupBox1.Location = new System.Drawing.Point(12, 214);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(311, 212);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Quy Định";
+            this.groupBox1.Text = "Danh Sách Quy Định";
             // 
             // dtvQuyDinh
             // 
             this.dtvQuyDinh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtvQuyDinh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dtvQuyDinh.Location = new System.Drawing.Point(3, 23);
+            this.dtvQuyDinh.Location = new System.Drawing.Point(3, 26);
             this.dtvQuyDinh.Name = "dtvQuyDinh";
             this.dtvQuyDinh.ReadOnly = true;
             this.dtvQuyDinh.RowHeadersWidth = 51;
             this.dtvQuyDinh.RowTemplate.Height = 29;
             this.dtvQuyDinh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtvQuyDinh.Size = new System.Drawing.Size(305, 186);
+            this.dtvQuyDinh.Size = new System.Drawing.Size(305, 183);
             this.dtvQuyDinh.TabIndex = 0;
             this.dtvQuyDinh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvQuyDinh_CellClick);
             // 
@@ -97,16 +97,19 @@
             // 
             // txtGiaTri
             // 
+            this.txtGiaTri.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtGiaTri.Location = new System.Drawing.Point(301, 75);
             this.txtGiaTri.Name = "txtGiaTri";
-            this.txtGiaTri.Size = new System.Drawing.Size(197, 27);
+            this.txtGiaTri.Size = new System.Drawing.Size(197, 34);
             this.txtGiaTri.TabIndex = 3;
             // 
             // txtTenThamSo
             // 
+            this.txtTenThamSo.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtTenThamSo.Location = new System.Drawing.Point(6, 75);
             this.txtTenThamSo.Name = "txtTenThamSo";
-            this.txtTenThamSo.Size = new System.Drawing.Size(197, 27);
+            this.txtTenThamSo.ReadOnly = true;
+            this.txtTenThamSo.Size = new System.Drawing.Size(197, 34);
             this.txtTenThamSo.TabIndex = 2;
             // 
             // label3

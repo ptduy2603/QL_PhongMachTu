@@ -36,17 +36,11 @@ namespace QL_PhongMachTu
             con.Close();
 
             dvwDanhSachDonVi.DataSource = dt;
-        }
-        private void frmQuanLyDonVi_Load(object sender, EventArgs e)
-        {
-
-        }
+        }      
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            frmMain main = new frmMain();
-            main.Show();
-            this.Close();
+              this.Close();
         }
 
         private void btnThem_Click(object sender, EventArgs e)
@@ -94,12 +88,7 @@ namespace QL_PhongMachTu
                 txtMaDonVi.Focus();
             }
             con.Close();
-        }
-
-        private void dvwDanhSachTaiKhoan_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        }              
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
@@ -190,5 +179,6 @@ namespace QL_PhongMachTu
                 }
             }
         }
+               
     }
 }

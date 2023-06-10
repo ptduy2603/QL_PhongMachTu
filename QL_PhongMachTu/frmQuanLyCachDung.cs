@@ -58,15 +58,9 @@ namespace QL_PhongMachTu
             code = Convert.ToInt32(result);
 
         }
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
+     
         private void btnThoat_Click(object sender, EventArgs e)
-        {
-            frmMain main = new frmMain();
-            main.Show();
+        {            
             this.Close();
         }
 
@@ -204,6 +198,7 @@ namespace QL_PhongMachTu
                 }
             }
         }
+
     }
 }
 

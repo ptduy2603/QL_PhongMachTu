@@ -56,6 +56,7 @@ begin
 	set TenLT = @TenLT, MaDV = @MaDV , MaCD = @MaCD , DonGiaBan = @DonGiaBan
 	where MaLT = @MaLT
 end
+go
 
 -- Hàm kiểm tra đơn giá nhập có nhỏ hơn hoặc bằng đơn giá bán hay không 
 CREATE PROC spCheckDonGiaNhap
@@ -70,6 +71,7 @@ begin
 	else
 		select 0 as code
 end
+go
 
 CREATE PROC spCheckDonGiaBan
 @DonGiaBan int,
@@ -83,6 +85,7 @@ begin
 	else
 		select 0 as code
 end
+go
 
 
 

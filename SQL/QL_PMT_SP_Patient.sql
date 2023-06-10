@@ -16,7 +16,7 @@ CREATE PROC spGetPatientWithNgayKham
 as
 begin
 	select * from BENHNHAN
-	WHERE MaBN not in (SELECT MaBN from PHIEUKHAMBENH where NgayKham = @NgayKham)
+	WHERE MaBN not in (SELECT MaBN from PHIEUKHAMBENH where DAY(NgayKham) = DAY(@NgayKham) and MONTH(NgayKham) = MONTH(@NgayKham) and YEAR(NgayKham) = YEAR(@NgayKham))
 end
 go
 
@@ -32,6 +32,7 @@ begin
 	insert into BENHNHAN(MaBN, HoTen, GioiTinh, NamSinh, DiaChi) 
 	values (@MaBN, @HoTen, @GioiTinh, @NamSinh, @DiaChi)
 end
+go
 
 -- Xóa một bệnh nhân 
 CREATE PROC spDeletePatient
@@ -41,6 +42,7 @@ begin
 	delete from BENHNHAN 
 	where MaBN = @MaBN
 end
+go
 
 -- Thay đổi thông tin bệnh nhân 
 CREATE PROC spUpdatePatient 

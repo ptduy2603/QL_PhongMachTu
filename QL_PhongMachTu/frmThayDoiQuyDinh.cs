@@ -104,8 +104,6 @@ namespace QL_PhongMachTu
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            frmMain fMain = new frmMain();
-            fMain.Show();
             this.Close();
         }
     }

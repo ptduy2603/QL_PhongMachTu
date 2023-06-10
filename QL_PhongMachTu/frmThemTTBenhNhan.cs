@@ -68,10 +68,10 @@ namespace QL_PhongMachTu
                 return false;
             }
 
-            // nếu nhập số âm + nhập chữ + không nhập gì vào ôn năm sinh
+            // nếu nhập số âm + nhập chữ + Năm sinh lớn hơn năm hiện tại + không nhập gì vào ô năm sinh
             int namSinh;
             bool check = int.TryParse(txtNamSinh.Text.Trim(), out namSinh);
-            if (check == false || namSinh <= 0)
+            if (check == false || namSinh <= 0 || namSinh > Convert.ToInt32(DateTime.Now.ToString("dd/MM/yyyy").Substring(6,4)))
             {
                 errorProvider.SetError(txtNamSinh, "Năm sinh không hợp lệ");
                 return false;

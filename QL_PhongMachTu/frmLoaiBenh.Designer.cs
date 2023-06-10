@@ -28,188 +28,194 @@
         /// </summary>
         private void InitializeComponent()
         {
-            gbxLoaiBenh = new GroupBox();
-            dtvLoaiBenh = new DataGridView();
-            btnThoat = new Button();
-            btnSua = new Button();
-            btnXoa = new Button();
-            btnThem = new Button();
-            label1 = new Label();
-            groupBox1 = new GroupBox();
-            txtTenLoaiBenh = new TextBox();
-            txtMaLoaiBenh = new TextBox();
-            label3 = new Label();
-            label2 = new Label();
-            gbxLoaiBenh.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)dtvLoaiBenh).BeginInit();
-            groupBox1.SuspendLayout();
-            SuspendLayout();
+            this.gbxLoaiBenh = new System.Windows.Forms.GroupBox();
+            this.dtvLoaiBenh = new System.Windows.Forms.DataGridView();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.btnSua = new System.Windows.Forms.Button();
+            this.btnXoa = new System.Windows.Forms.Button();
+            this.btnThem = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtTenLoaiBenh = new System.Windows.Forms.TextBox();
+            this.txtMaLoaiBenh = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.gbxLoaiBenh.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLoaiBenh)).BeginInit();
+            this.groupBox1.SuspendLayout();
+            this.SuspendLayout();
             // 
             // gbxLoaiBenh
             // 
-            gbxLoaiBenh.Controls.Add(dtvLoaiBenh);
-            gbxLoaiBenh.Location = new Point(12, 205);
-            gbxLoaiBenh.Name = "gbxLoaiBenh";
-            gbxLoaiBenh.Size = new Size(465, 241);
-            gbxLoaiBenh.TabIndex = 23;
-            gbxLoaiBenh.TabStop = false;
-            gbxLoaiBenh.Text = "Danh Sách Loại Bệnh";
+            this.gbxLoaiBenh.Controls.Add(this.dtvLoaiBenh);
+            this.gbxLoaiBenh.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.gbxLoaiBenh.Location = new System.Drawing.Point(12, 205);
+            this.gbxLoaiBenh.Name = "gbxLoaiBenh";
+            this.gbxLoaiBenh.Size = new System.Drawing.Size(465, 241);
+            this.gbxLoaiBenh.TabIndex = 23;
+            this.gbxLoaiBenh.TabStop = false;
+            this.gbxLoaiBenh.Text = "Danh Sách Loại Bệnh";
             // 
             // dtvLoaiBenh
             // 
-            dtvLoaiBenh.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtvLoaiBenh.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dtvLoaiBenh.Dock = DockStyle.Fill;
-            dtvLoaiBenh.Location = new Point(3, 23);
-            dtvLoaiBenh.Name = "dtvLoaiBenh";
-            dtvLoaiBenh.ReadOnly = true;
-            dtvLoaiBenh.RowHeadersWidth = 51;
-            dtvLoaiBenh.RowTemplate.Height = 29;
-            dtvLoaiBenh.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
-            dtvLoaiBenh.Size = new Size(459, 215);
-            dtvLoaiBenh.TabIndex = 0;
-            dtvLoaiBenh.CellClick += dtvLoaiBenh_CellClick;
+            this.dtvLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtvLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtvLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dtvLoaiBenh.Location = new System.Drawing.Point(3, 26);
+            this.dtvLoaiBenh.Name = "dtvLoaiBenh";
+            this.dtvLoaiBenh.ReadOnly = true;
+            this.dtvLoaiBenh.RowHeadersWidth = 51;
+            this.dtvLoaiBenh.RowTemplate.Height = 29;
+            this.dtvLoaiBenh.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dtvLoaiBenh.Size = new System.Drawing.Size(459, 212);
+            this.dtvLoaiBenh.TabIndex = 0;
+            this.dtvLoaiBenh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtvLoaiBenh_CellClick);
             // 
             // btnThoat
             // 
-            btnThoat.BackColor = SystemColors.MenuHighlight;
-            btnThoat.Cursor = Cursors.Hand;
-            btnThoat.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnThoat.ForeColor = Color.White;
-            btnThoat.Location = new Point(638, 352);
-            btnThoat.Name = "btnThoat";
-            btnThoat.Size = new Size(128, 59);
-            btnThoat.TabIndex = 22;
-            btnThoat.Text = "Thoát";
-            btnThoat.UseVisualStyleBackColor = false;            // 
+            this.btnThoat.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Location = new System.Drawing.Point(638, 352);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(128, 59);
+            this.btnThoat.TabIndex = 22;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
             // btnSua
             // 
-            btnSua.BackColor = SystemColors.MenuHighlight;
-            btnSua.Cursor = Cursors.Hand;
-            btnSua.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnSua.ForeColor = Color.White;
-            btnSua.Location = new Point(486, 352);
-            btnSua.Name = "btnSua";
-            btnSua.Size = new Size(128, 59);
-            btnSua.TabIndex = 21;
-            btnSua.Text = "Sửa";
-            btnSua.UseVisualStyleBackColor = false;
-            btnSua.Click += btnSua_Click;
+            this.btnSua.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnSua.ForeColor = System.Drawing.Color.White;
+            this.btnSua.Location = new System.Drawing.Point(486, 352);
+            this.btnSua.Name = "btnSua";
+            this.btnSua.Size = new System.Drawing.Size(128, 59);
+            this.btnSua.TabIndex = 21;
+            this.btnSua.Text = "Sửa";
+            this.btnSua.UseVisualStyleBackColor = false;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
-            btnXoa.BackColor = SystemColors.MenuHighlight;
-            btnXoa.Cursor = Cursors.Hand;
-            btnXoa.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnXoa.ForeColor = Color.White;
-            btnXoa.Location = new Point(638, 255);
-            btnXoa.Name = "btnXoa";
-            btnXoa.Size = new Size(128, 59);
-            btnXoa.TabIndex = 20;
-            btnXoa.Text = "Xóa";
-            btnXoa.UseVisualStyleBackColor = false;
-            btnXoa.Click += btnXoa_Click;
+            this.btnXoa.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnXoa.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXoa.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnXoa.ForeColor = System.Drawing.Color.White;
+            this.btnXoa.Location = new System.Drawing.Point(638, 255);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(128, 59);
+            this.btnXoa.TabIndex = 20;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = false;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnThem
             // 
-            btnThem.BackColor = SystemColors.MenuHighlight;
-            btnThem.Cursor = Cursors.Hand;
-            btnThem.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            btnThem.ForeColor = Color.White;
-            btnThem.Location = new Point(486, 255);
-            btnThem.Name = "btnThem";
-            btnThem.Size = new Size(128, 59);
-            btnThem.TabIndex = 19;
-            btnThem.Text = "Thêm";
-            btnThem.UseVisualStyleBackColor = false;
-            btnThem.Click += btnThem_Click;
+            this.btnThem.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnThem.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThem.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThem.ForeColor = System.Drawing.Color.White;
+            this.btnThem.Location = new System.Drawing.Point(486, 255);
+            this.btnThem.Name = "btnThem";
+            this.btnThem.Size = new System.Drawing.Size(128, 59);
+            this.btnThem.TabIndex = 19;
+            this.btnThem.Text = "Thêm";
+            this.btnThem.UseVisualStyleBackColor = false;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.MenuHighlight;
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(800, 46);
-            label1.TabIndex = 18;
-            label1.Text = "Quản Lý Loại Bệnh";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(775, 46);
+            this.label1.TabIndex = 18;
+            this.label1.Text = "Quản Lý Loại Bệnh";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // groupBox1
             // 
-            groupBox1.BackColor = Color.White;
-            groupBox1.Controls.Add(txtTenLoaiBenh);
-            groupBox1.Controls.Add(txtMaLoaiBenh);
-            groupBox1.Controls.Add(label3);
-            groupBox1.Controls.Add(label2);
-            groupBox1.Location = new Point(12, 59);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(747, 149);
-            groupBox1.TabIndex = 24;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Nhập Loại Bệnh";
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.txtTenLoaiBenh);
+            this.groupBox1.Controls.Add(this.txtMaLoaiBenh);
+            this.groupBox1.Controls.Add(this.label3);
+            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Location = new System.Drawing.Point(12, 59);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(747, 149);
+            this.groupBox1.TabIndex = 24;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Nhập Loại Bệnh";
             // 
             // txtTenLoaiBenh
             // 
-            txtTenLoaiBenh.BackColor = SystemColors.Menu;
-            txtTenLoaiBenh.Location = new Point(455, 88);
-            txtTenLoaiBenh.Name = "txtTenLoaiBenh";
-            txtTenLoaiBenh.Size = new Size(231, 27);
-            txtTenLoaiBenh.TabIndex = 3;
+            this.txtTenLoaiBenh.BackColor = System.Drawing.Color.White;
+            this.txtTenLoaiBenh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtTenLoaiBenh.Location = new System.Drawing.Point(455, 88);
+            this.txtTenLoaiBenh.Name = "txtTenLoaiBenh";
+            this.txtTenLoaiBenh.Size = new System.Drawing.Size(231, 34);
+            this.txtTenLoaiBenh.TabIndex = 3;
             // 
             // txtMaLoaiBenh
             // 
-            txtMaLoaiBenh.BackColor = SystemColors.Menu;
-            txtMaLoaiBenh.Location = new Point(31, 88);
-            txtMaLoaiBenh.Name = "txtMaLoaiBenh";
-            txtMaLoaiBenh.Size = new Size(231, 27);
-            txtMaLoaiBenh.TabIndex = 2;
+            this.txtMaLoaiBenh.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.txtMaLoaiBenh.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txtMaLoaiBenh.Location = new System.Drawing.Point(31, 88);
+            this.txtMaLoaiBenh.Name = "txtMaLoaiBenh";
+            this.txtMaLoaiBenh.Size = new System.Drawing.Size(231, 34);
+            this.txtMaLoaiBenh.TabIndex = 2;
             // 
             // label3
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label3.Location = new Point(455, 35);
-            label3.Name = "label3";
-            label3.Size = new Size(172, 32);
-            label3.TabIndex = 1;
-            label3.Text = "Tên Loại Bệnh";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(455, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(172, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Tên Loại Bệnh";
             // 
             // label2
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label2.Location = new Point(31, 35);
-            label2.Name = "label2";
-            label2.Size = new Size(168, 32);
-            label2.TabIndex = 0;
-            label2.Text = "Mã Loại Bệnh";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(31, 35);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 32);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Mã Loại Bệnh";
             // 
             // frmLoaiBenh
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            ControlBox = false;
-            Controls.Add(gbxLoaiBenh);
-            Controls.Add(btnThoat);
-            Controls.Add(btnSua);
-            Controls.Add(btnXoa);
-            Controls.Add(btnThem);
-            Controls.Add(label1);
-            Controls.Add(groupBox1);
-            FormBorderStyle = FormBorderStyle.FixedSingle;
-            MaximizeBox = false;
-            Name = "frmLoaiBenh";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Quản Lý Loại Bệnh";
-            gbxLoaiBenh.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)dtvLoaiBenh).EndInit();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(775, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.gbxLoaiBenh);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.btnSua);
+            this.Controls.Add(this.btnXoa);
+            this.Controls.Add(this.btnThem);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
+            this.Name = "frmLoaiBenh";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Quản Lý Loại Bệnh";
+            this.gbxLoaiBenh.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dtvLoaiBenh)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.ResumeLayout(false);
+
         }
 
         #endregion

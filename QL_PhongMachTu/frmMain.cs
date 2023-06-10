@@ -86,15 +86,13 @@ namespace QL_PhongMachTu
         private void xemThôngTinĐơnVịToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmQuanLyDonVi QLDonVi = new frmQuanLyDonVi();
-            QLDonVi.Show();
-            this.Close();
+            QLDonVi.ShowDialog();           
         }
 
         private void xemThôngTinCáchDùngToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmQuanLyCachDung QLCachDung = new frmQuanLyCachDung();
-            QLCachDung.Show();
-            this.Close();
+            QLCachDung.ShowDialog();
         }
 
         private void lậpPhiếuKhámBệnhToolStripMenuItem_Click(object sender, EventArgs e)
@@ -114,15 +112,14 @@ namespace QL_PhongMachTu
         private void thayĐổiQuyĐịnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmThayDoiQuyDinh frmThayDoiQuyDinh = new frmThayDoiQuyDinh();
-            frmThayDoiQuyDinh.Show();
-            this.Close();
+            frmThayDoiQuyDinh.ShowDialog();
+            
         }
 
         private void thôngTinLoạiBệnhToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmLoaiBenh fLoaiBenh = new frmLoaiBenh();
-            fLoaiBenh.Show();
-            this.Close();
+            fLoaiBenh.ShowDialog();
         }
 
         private void lậpPhiếuNhậpThuốcToolStripMenuItem_Click(object sender, EventArgs e)
