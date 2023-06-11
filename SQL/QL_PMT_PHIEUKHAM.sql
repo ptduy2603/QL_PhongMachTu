@@ -89,7 +89,7 @@ begin
 end
 go
 
-DROP TRIGGER trg_ctpk_insert
+DROP TRIGGER trg_ctpk_pk_insert
 go
 
 -- SP Cập nhật lại số lượng thuốc trong kho 

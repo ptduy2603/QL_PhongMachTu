@@ -71,3 +71,7 @@ D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmQuan
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmLapPhieuNhapThuoc.resources
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmThayDoiQuyDinh.resources
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmLoaiBenh.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmMenuLapBaoCao.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmHoaDon.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmLapHoaDon.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmTraCuuBenhNhan.resources

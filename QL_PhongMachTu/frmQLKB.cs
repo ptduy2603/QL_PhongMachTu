@@ -18,16 +18,6 @@ namespace QL_PhongMachTu
             this.ControlBox = false;
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             frmThemTTBenhNhan themTTBenhNhan = new frmThemTTBenhNhan();
@@ -42,15 +32,23 @@ namespace QL_PhongMachTu
             this.Close();
         }
 
-        private void frmQLKB_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             frmLapPhieuKham lapPhieuKham = new frmLapPhieuKham();
             lapPhieuKham.Show();
+            this.Close();
+        }
+
+        private void btnXemLoaiBenh_Click(object sender, EventArgs e)
+        {
+            frmLoaiBenh fLoaiBenh = new frmLoaiBenh();
+            fLoaiBenh.ShowDialog();            
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmTraCuuBenhNhan fTraCuu = new frmTraCuuBenhNhan();
+            fTraCuu.Show();
             this.Close();
         }
     }

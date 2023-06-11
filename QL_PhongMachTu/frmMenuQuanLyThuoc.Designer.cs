@@ -28,94 +28,115 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            SuspendLayout();
+            this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
+            this.btnThoat = new System.Windows.Forms.Button();
+            this.SuspendLayout();
             // 
             // label1
             // 
-            label1.BackColor = SystemColors.MenuHighlight;
-            label1.Dock = DockStyle.Top;
-            label1.Font = new Font("Segoe UI", 23F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(0, 0);
-            label1.Name = "label1";
-            label1.Size = new Size(787, 63);
-            label1.TabIndex = 0;
-            label1.Text = "Mời Bạn Lựa Chọn";
-            label1.TextAlign = ContentAlignment.TopCenter;
+            this.label1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 23F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(787, 63);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mời Bạn Lựa Chọn";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // button1
             // 
-            button1.BackColor = SystemColors.MenuHighlight;
-            button1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.ForeColor = Color.White;
-            button1.Location = new Point(63, 133);
-            button1.Name = "button1";
-            button1.Size = new Size(297, 120);
-            button1.TabIndex = 1;
-            button1.Text = "Lập Phiếu Nhập Thuốc";
-            button1.UseVisualStyleBackColor = false;
+            this.button1.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(63, 106);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(297, 120);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Lập Phiếu Nhập Thuốc";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            button2.BackColor = SystemColors.MenuHighlight;
-            button2.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button2.ForeColor = Color.White;
-            button2.Location = new Point(427, 133);
-            button2.Name = "button2";
-            button2.Size = new Size(297, 120);
-            button2.TabIndex = 2;
-            button2.Text = "Xem Thông Tin Thuốc";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            this.button2.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.ForeColor = System.Drawing.Color.White;
+            this.button2.Location = new System.Drawing.Point(427, 106);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(297, 120);
+            this.button2.TabIndex = 2;
+            this.button2.Text = "Xem Thông Tin Thuốc";
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            button3.BackColor = SystemColors.MenuHighlight;
-            button3.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.ForeColor = Color.White;
-            button3.Location = new Point(63, 330);
-            button3.Name = "button3";
-            button3.Size = new Size(297, 120);
-            button3.TabIndex = 3;
-            button3.Text = "Xem Thông Tin Đơn Vị";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
+            this.button3.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button3.ForeColor = System.Drawing.Color.White;
+            this.button3.Location = new System.Drawing.Point(63, 266);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(297, 120);
+            this.button3.TabIndex = 3;
+            this.button3.Text = "Xem Thông Tin Đơn Vị";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            button4.BackColor = SystemColors.MenuHighlight;
-            button4.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.ForeColor = Color.White;
-            button4.Location = new Point(427, 330);
-            button4.Name = "button4";
-            button4.Size = new Size(297, 120);
-            button4.TabIndex = 4;
-            button4.Text = "Xem Thông Tin Cách Dùng";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click;
+            this.button4.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.ForeColor = System.Drawing.Color.White;
+            this.button4.Location = new System.Drawing.Point(427, 266);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(297, 120);
+            this.button4.TabIndex = 4;
+            this.button4.Text = "Xem Thông Tin Cách Dùng";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnThoat
+            // 
+            this.btnThoat.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnThoat.ForeColor = System.Drawing.Color.White;
+            this.btnThoat.Location = new System.Drawing.Point(63, 431);
+            this.btnThoat.Name = "btnThoat";
+            this.btnThoat.Size = new System.Drawing.Size(661, 71);
+            this.btnThoat.TabIndex = 5;
+            this.btnThoat.Text = "Thoát";
+            this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmMenuQuanLyThuoc
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            ClientSize = new Size(787, 565);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(label1);
-            MaximizeBox = false;
-            Name = "frmMenuQuanLyThuoc";
-            StartPosition = FormStartPosition.CenterScreen;
-            Text = "Menu Quản Lý Thuốc";
-            Load += frmMenuQuanLyThuoc_Load_1;
-            ResumeLayout(false);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ClientSize = new System.Drawing.Size(787, 539);
+            this.Controls.Add(this.btnThoat);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.label1);
+            this.MaximizeBox = false;
+            this.Name = "frmMenuQuanLyThuoc";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Menu Quản Lý Thuốc";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
@@ -125,5 +146,6 @@
         private Button button2;
         private Button button3;
         private Button button4;
+        private Button btnThoat;
     }
 }

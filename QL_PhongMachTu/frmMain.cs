@@ -128,5 +128,19 @@ namespace QL_PhongMachTu
             fLapPhieuNhapThuoc.Show();
             this.Close();
         }
+
+        private void btnLapBaoCao_Click(object sender, EventArgs e)
+        {
+            frmMenuLapBaoCao fLapBaoCao = new frmMenuLapBaoCao();
+            fLapBaoCao.Show();
+            this.Close();
+        }
+
+        private void traCứuBệnhNhânToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmTraCuuBenhNhan fTraCuu = new frmTraCuuBenhNhan();
+            fTraCuu.Show();
+            this.Close();
+        }
     }
 }

@@ -18,16 +18,6 @@ namespace QL_PhongMachTu
             this.ControlBox = false;
         }
 
-        private void frmMenuQuanLyThuoc_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void frmMenuQuanLyThuoc_Load_1(object sender, EventArgs e)
-        {
-
-        }
-
         private void button2_Click(object sender, EventArgs e)
         {
             frmQuanLyThuoc QuanLyThuoc = new frmQuanLyThuoc();
@@ -38,14 +28,26 @@ namespace QL_PhongMachTu
         private void button3_Click(object sender, EventArgs e)
         {
             frmQuanLyDonVi QLDonVi = new frmQuanLyDonVi();
-            QLDonVi.Show();
-            this.Close();
+            QLDonVi.ShowDialog();           
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
             frmQuanLyCachDung QLCachDung = new frmQuanLyCachDung();
-            QLCachDung.Show();
+            QLCachDung.ShowDialog();            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            frmLapPhieuNhapThuoc fLapPhieuNhapThuoc = new frmLapPhieuNhapThuoc();
+            fLapPhieuNhapThuoc.Show();
+            this.Close();
+        }
+
+        private void btnThoat_Click(object sender, EventArgs e)
+        {
+            frmMain fMain = new frmMain();
+            fMain.Show();
             this.Close();
         }
     }

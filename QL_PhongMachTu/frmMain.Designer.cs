@@ -127,6 +127,7 @@
             this.traCứuBệnhNhânToolStripMenuItem.Name = "traCứuBệnhNhânToolStripMenuItem";
             this.traCứuBệnhNhânToolStripMenuItem.Size = new System.Drawing.Size(291, 28);
             this.traCứuBệnhNhânToolStripMenuItem.Text = "Tra Cứu Bệnh Nhân";
+            this.traCứuBệnhNhânToolStripMenuItem.Click += new System.EventHandler(this.traCứuBệnhNhânToolStripMenuItem_Click);
             // 
             // thôngTinLoạiBệnhToolStripMenuItem
             // 
@@ -360,6 +361,7 @@
             this.btnLapBaoCao.TabIndex = 8;
             this.btnLapBaoCao.Text = "Lập Báo Cáo";
             this.btnLapBaoCao.UseVisualStyleBackColor = false;
+            this.btnLapBaoCao.Click += new System.EventHandler(this.btnLapBaoCao_Click);
             // 
             // frmMain
             // 
