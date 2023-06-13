@@ -182,6 +182,7 @@
             this.tipLapHoaDon.Name = "tipLapHoaDon";
             this.tipLapHoaDon.Size = new System.Drawing.Size(125, 47);
             this.tipLapHoaDon.Text = "Lập Hóa Đơn";
+            this.tipLapHoaDon.Click += new System.EventHandler(this.tipLapHoaDon_Click);
             // 
             // tipLapBaoCao
             // 
@@ -200,6 +201,7 @@
             this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Name = "lậpBáoCáoDoanhThuThángToolStripMenuItem";
             this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Size = new System.Drawing.Size(333, 28);
             this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Text = "Lập Báo Cáo Doanh Thu Tháng";
+            this.lậpBáoCáoDoanhThuThángToolStripMenuItem.Click += new System.EventHandler(this.lậpBáoCáoDoanhThuThángToolStripMenuItem_Click);
             // 
             // lậpBáoCáoSửDụngThuốcToolStripMenuItem
             // 
@@ -208,6 +210,7 @@
             this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Name = "lậpBáoCáoSửDụngThuốcToolStripMenuItem";
             this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Size = new System.Drawing.Size(333, 28);
             this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Text = "Lập Báo Cáo Sử Dụng Thuốc";
+            this.lậpBáoCáoSửDụngThuốcToolStripMenuItem.Click += new System.EventHandler(this.lậpBáoCáoSửDụngThuốcToolStripMenuItem_Click);
             // 
             // tipAdmin
             // 
@@ -348,6 +351,7 @@
             this.btnLapHoaDon.TabIndex = 7;
             this.btnLapHoaDon.Text = "Lập Hóa Đơn";
             this.btnLapHoaDon.UseVisualStyleBackColor = false;
+            this.btnLapHoaDon.Click += new System.EventHandler(this.btnLapHoaDon_Click);
             // 
             // btnLapBaoCao
             // 

@@ -142,5 +142,33 @@ namespace QL_PhongMachTu
             fTraCuu.Show();
             this.Close();
         }
+
+        private void tipLapHoaDon_Click(object sender, EventArgs e)
+        {
+            frmLapHoaDon fLapHoaDon = new frmLapHoaDon();
+            fLapHoaDon.Show();
+            this.Hide();
+        }
+
+        private void btnLapHoaDon_Click(object sender, EventArgs e)
+        {
+            frmLapHoaDon fLapHoaDon = new frmLapHoaDon();
+            fLapHoaDon.Show();
+            this.Hide();
+        }
+
+        private void lậpBáoCáoSửDụngThuốcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoSuDungThuoc fBaoCaoSuDungThuoc = new frmBaoCaoSuDungThuoc();
+            fBaoCaoSuDungThuoc.Show();
+            this.Close();
+        }
+
+        private void lậpBáoCáoDoanhThuThángToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoDoanhThuThang fBaoCaoDoanhThuThang = new frmBaoCaoDoanhThuThang();
+            fBaoCaoDoanhThuThang.Show();
+            this.Close();
+        }
     }
 }

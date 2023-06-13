@@ -451,5 +451,12 @@ namespace QL_PhongMachTu
             }
                 
         }
+
+        private void btnLapHoaDon_Click(object sender, EventArgs e)
+        {
+            frmLapHoaDon fLapHoaDon = new frmLapHoaDon();
+            fLapHoaDon.Show();
+            this.Close();
+        }
     }
 }

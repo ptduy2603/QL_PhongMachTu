@@ -30,10 +30,10 @@
         {
             this.lblTitle = new System.Windows.Forms.Label();
             this.grbDanhSachPhieuKham = new System.Windows.Forms.GroupBox();
+            this.dgvDanhSachPhieuKham = new System.Windows.Forms.DataGridView();
             this.lblNgayLap = new System.Windows.Forms.Label();
             this.dtpNgayLap = new System.Windows.Forms.DateTimePicker();
-            this.dgvDanhSachPhieuKham = new System.Windows.Forms.DataGridView();
-            this.btnLapHoaDon = new System.Windows.Forms.Button();
+            this.btnXemHoaDon = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
             this.grbDanhSachPhieuKham.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachPhieuKham)).BeginInit();
@@ -63,6 +63,21 @@
             this.grbDanhSachPhieuKham.TabStop = false;
             this.grbDanhSachPhieuKham.Text = "Danh Sách Phiếu Khám Trong Ngày";
             // 
+            // dgvDanhSachPhieuKham
+            // 
+            this.dgvDanhSachPhieuKham.AllowUserToAddRows = false;
+            this.dgvDanhSachPhieuKham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvDanhSachPhieuKham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDanhSachPhieuKham.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvDanhSachPhieuKham.Location = new System.Drawing.Point(3, 26);
+            this.dgvDanhSachPhieuKham.Name = "dgvDanhSachPhieuKham";
+            this.dgvDanhSachPhieuKham.ReadOnly = true;
+            this.dgvDanhSachPhieuKham.RowHeadersWidth = 51;
+            this.dgvDanhSachPhieuKham.RowTemplate.Height = 29;
+            this.dgvDanhSachPhieuKham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvDanhSachPhieuKham.Size = new System.Drawing.Size(840, 276);
+            this.dgvDanhSachPhieuKham.TabIndex = 0;
+            // 
             // lblNgayLap
             // 
             this.lblNgayLap.AutoSize = true;
@@ -83,33 +98,21 @@
             this.dtpNgayLap.Name = "dtpNgayLap";
             this.dtpNgayLap.Size = new System.Drawing.Size(250, 34);
             this.dtpNgayLap.TabIndex = 4;
+            this.dtpNgayLap.ValueChanged += new System.EventHandler(this.dtpNgayLap_ValueChanged);
             // 
-            // dgvDanhSachPhieuKham
+            // btnXemHoaDon
             // 
-            this.dgvDanhSachPhieuKham.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dgvDanhSachPhieuKham.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDanhSachPhieuKham.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvDanhSachPhieuKham.Location = new System.Drawing.Point(3, 26);
-            this.dgvDanhSachPhieuKham.Name = "dgvDanhSachPhieuKham";
-            this.dgvDanhSachPhieuKham.ReadOnly = true;
-            this.dgvDanhSachPhieuKham.RowHeadersWidth = 51;
-            this.dgvDanhSachPhieuKham.RowTemplate.Height = 29;
-            this.dgvDanhSachPhieuKham.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvDanhSachPhieuKham.Size = new System.Drawing.Size(840, 276);
-            this.dgvDanhSachPhieuKham.TabIndex = 0;
-            // 
-            // btnLapHoaDon
-            // 
-            this.btnLapHoaDon.BackColor = System.Drawing.SystemColors.MenuHighlight;
-            this.btnLapHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLapHoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLapHoaDon.ForeColor = System.Drawing.Color.White;
-            this.btnLapHoaDon.Location = new System.Drawing.Point(129, 468);
-            this.btnLapHoaDon.Name = "btnLapHoaDon";
-            this.btnLapHoaDon.Size = new System.Drawing.Size(221, 52);
-            this.btnLapHoaDon.TabIndex = 5;
-            this.btnLapHoaDon.Text = "Lập Hóa Đơn";
-            this.btnLapHoaDon.UseVisualStyleBackColor = false;
+            this.btnXemHoaDon.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnXemHoaDon.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnXemHoaDon.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnXemHoaDon.ForeColor = System.Drawing.Color.White;
+            this.btnXemHoaDon.Location = new System.Drawing.Point(70, 466);
+            this.btnXemHoaDon.Name = "btnXemHoaDon";
+            this.btnXemHoaDon.Size = new System.Drawing.Size(324, 52);
+            this.btnXemHoaDon.TabIndex = 5;
+            this.btnXemHoaDon.Text = "Xem Hóa Đơn";
+            this.btnXemHoaDon.UseVisualStyleBackColor = false;
+            this.btnXemHoaDon.Click += new System.EventHandler(this.btnXemHoaDon_Click);
             // 
             // btnThoat
             // 
@@ -117,12 +120,13 @@
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(518, 468);
+            this.btnThoat.Location = new System.Drawing.Point(459, 466);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(221, 52);
+            this.btnThoat.Size = new System.Drawing.Size(324, 52);
             this.btnThoat.TabIndex = 6;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // frmLapHoaDon
             // 
@@ -132,7 +136,7 @@
             this.ClientSize = new System.Drawing.Size(866, 538);
             this.ControlBox = false;
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnLapHoaDon);
+            this.Controls.Add(this.btnXemHoaDon);
             this.Controls.Add(this.dtpNgayLap);
             this.Controls.Add(this.lblNgayLap);
             this.Controls.Add(this.grbDanhSachPhieuKham);
@@ -142,6 +146,7 @@
             this.Name = "frmLapHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Lập Hóa Đơn Thanh Toán";
+            this.Load += new System.EventHandler(this.frmLapHoaDon_Load);
             this.grbDanhSachPhieuKham.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDanhSachPhieuKham)).EndInit();
             this.ResumeLayout(false);
@@ -156,7 +161,7 @@
         private Label lblNgayLap;
         private DateTimePicker dtpNgayLap;
         private DataGridView dgvDanhSachPhieuKham;
-        private Button btnLapHoaDon;
+        private Button btnXemHoaDon;
         private Button btnThoat;
     }
 }

@@ -634,6 +634,7 @@
             this.btnLapHoaDon.TabIndex = 12;
             this.btnLapHoaDon.Text = "Lập Hóa Đơn";
             this.btnLapHoaDon.UseVisualStyleBackColor = false;
+            this.btnLapHoaDon.Click += new System.EventHandler(this.btnLapHoaDon_Click);
             // 
             // errorProvider
             // 

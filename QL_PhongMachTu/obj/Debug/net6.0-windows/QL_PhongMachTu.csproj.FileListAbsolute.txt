@@ -75,3 +75,7 @@ D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmMenu
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmHoaDon.resources
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmLapHoaDon.resources
 D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmTraCuuBenhNhan.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmBaoCaoSuDungThuoc.resources
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\Interop.Microsoft.Office.Interop.Excel.dll
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.csproj.ResolveComReference.cache
+D:\QL_PhongMachTu\QL_PhongMachTu\obj\Debug\net6.0-windows\QL_PhongMachTu.frmBaoCaoDoanhThuThang.resources

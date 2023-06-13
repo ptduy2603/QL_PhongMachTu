@@ -24,5 +24,19 @@ namespace QL_PhongMachTu
             fMain.Show();
             this.Close();
         }
+
+        private void btnBC_SuDungThuoc_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoSuDungThuoc fBaoCaoSuDungThuoc = new frmBaoCaoSuDungThuoc();
+            fBaoCaoSuDungThuoc.Show();
+            this.Close();
+        }
+
+        private void btnBC_DoanhThuThang_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoDoanhThuThang fBaoCaoDoanhThuThang = new frmBaoCaoDoanhThuThang();
+            fBaoCaoDoanhThuThang.Show();
+            this.Close();
+        }
     }
 }

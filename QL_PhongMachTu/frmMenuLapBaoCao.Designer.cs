@@ -59,6 +59,7 @@
             this.btnBC_DoanhThuThang.TabIndex = 1;
             this.btnBC_DoanhThuThang.Text = "Lập Báo Cáo Doanh Thu Tháng";
             this.btnBC_DoanhThuThang.UseVisualStyleBackColor = false;
+            this.btnBC_DoanhThuThang.Click += new System.EventHandler(this.btnBC_DoanhThuThang_Click);
             // 
             // btnBC_SuDungThuoc
             // 
@@ -72,6 +73,7 @@
             this.btnBC_SuDungThuoc.TabIndex = 2;
             this.btnBC_SuDungThuoc.Text = "Lập Báo Cáo Sử Dụng Thuốc";
             this.btnBC_SuDungThuoc.UseVisualStyleBackColor = false;
+            this.btnBC_SuDungThuoc.Click += new System.EventHandler(this.btnBC_SuDungThuoc_Click);
             // 
             // btnThoat
             // 

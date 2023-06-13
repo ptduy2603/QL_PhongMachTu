@@ -284,6 +284,7 @@
             // 
             // dgvDanhSachBenhNhan
             // 
+            this.dgvDanhSachBenhNhan.AllowUserToAddRows = false;
             this.dgvDanhSachBenhNhan.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDanhSachBenhNhan.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDanhSachBenhNhan.Dock = System.Windows.Forms.DockStyle.Fill;
