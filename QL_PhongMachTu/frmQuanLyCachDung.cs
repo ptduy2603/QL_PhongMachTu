@@ -19,7 +19,9 @@ namespace QL_PhongMachTu
             InitializeComponent();
             this.ControlBox = false;
             getAllCachDung();
-            txtMaCachDung.Focus();
+            txtMaCachDung.Text = CachDung.getAutoId();
+            txtMaCachDung.PlaceholderText = CachDung.getAutoId();
+            txtTenCachDung.Focus();            
         }
 
         public void getAllCachDung()
@@ -69,9 +71,10 @@ namespace QL_PhongMachTu
             if (CheckData_Nhap(0))
             {
                 MessageBox.Show("Thông tin vừa nhập không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMaCachDung.Text = "";
+                txtMaCachDung.Text = CachDung.getAutoId();
+                txtMaCachDung.PlaceholderText = CachDung.getAutoId();
                 txtTenCachDung.Text = "";
-                txtMaCachDung.Focus();
+                txtTenCachDung.Focus();
                 return;
             }
             else
@@ -89,19 +92,21 @@ namespace QL_PhongMachTu
                     cmd.Parameters.AddWithValue("@MaCachDung", txtMaCachDung.Text.Trim());
                     cmd.Parameters.AddWithValue("@TenCachDung", txtTenCachDung.Text.Trim());
                     cmd.ExecuteNonQuery();
-                    MessageBox.Show("Thêm đơn vị thành công", "Thông báo", MessageBoxButtons.OK);
+                    MessageBox.Show("Thêm cách dùng thành công", "Thông báo", MessageBoxButtons.OK);
                     //cập nhật lại list Đơn vị
                     getAllCachDung();
-                    txtMaCachDung.Text = "";
+                    txtMaCachDung.Text = CachDung.getAutoId();
+                    txtMaCachDung.PlaceholderText = CachDung.getAutoId();
                     txtTenCachDung.Text = "";
-                    txtMaCachDung.Focus();
+                    txtTenCachDung.Focus();
                 }
                 catch
                 {
                     MessageBox.Show("Đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtMaCachDung.Text = "";
+                    txtMaCachDung.Text = CachDung.getAutoId();
+                    txtMaCachDung.PlaceholderText = CachDung.getAutoId();
                     txtTenCachDung.Text = "";
-                    txtMaCachDung.Focus();
+                    txtTenCachDung.Focus();
                 }
                 finally
                 {
@@ -135,9 +140,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllCachDung();
-                        txtMaCachDung.Text = "";
+                        txtMaCachDung.Text = CachDung.getAutoId();
+                        txtMaCachDung.PlaceholderText = CachDung.getAutoId();
                         txtTenCachDung.Text = "";
-                        txtMaCachDung.Focus();
+                        txtTenCachDung.Focus();
                     }
                 }
                 catch (Exception ex)
@@ -174,7 +180,7 @@ namespace QL_PhongMachTu
                 CheckData_SQL(con, cmd, code);
                 try
                 {
-                    DialogResult res = MessageBox.Show("Bạn có muốn xóa đơn vị này không", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult res = MessageBox.Show("Bạn có muốn xóa cách dùng này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res == DialogResult.Yes)
                     {
                         cmd.Parameters.Clear();
@@ -183,9 +189,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllCachDung();
-                        txtMaCachDung.Text = "";
+                        txtMaCachDung.Text = CachDung.getAutoId();
+                        txtMaCachDung.PlaceholderText = CachDung.getAutoId();
                         txtTenCachDung.Text = "";
-                        txtMaCachDung.Focus();
+                        txtTenCachDung.Focus();
                     }
                 }
                 catch

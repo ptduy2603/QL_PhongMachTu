@@ -58,6 +58,7 @@
             // 
             // dtvLoaiBenh
             // 
+            this.dtvLoaiBenh.AllowUserToAddRows = false;
             this.dtvLoaiBenh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtvLoaiBenh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtvLoaiBenh.Dock = System.Windows.Forms.DockStyle.Fill;

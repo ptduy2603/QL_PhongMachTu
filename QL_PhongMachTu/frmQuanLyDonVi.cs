@@ -19,7 +19,9 @@ namespace QL_PhongMachTu
             InitializeComponent();
             this.ControlBox = false;
             getAllDonVi();
-            txtMaDonVi.Focus();
+            txtMaDonVi.Text = DonVi.getAutoId();
+            txtMaDonVi.PlaceholderText = DonVi.getAutoId();
+            txtTenDonVi.Focus();
         }
         public void getAllDonVi()
         {
@@ -48,8 +50,10 @@ namespace QL_PhongMachTu
             if (String.IsNullOrEmpty(txtMaDonVi.Text.Trim()) || String.IsNullOrEmpty(txtTenDonVi.Text.Trim()))
             {
                 MessageBox.Show("Thông tin vừa nhập không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMaDonVi.Text = "";
+                txtMaDonVi.Text = DonVi.getAutoId();
+                txtMaDonVi.PlaceholderText = DonVi.getAutoId();
                 txtTenDonVi.Text = "";
+                txtTenDonVi.Focus();
                 return;
             }
 
@@ -69,9 +73,10 @@ namespace QL_PhongMachTu
             if (code == 1)
             {
                 MessageBox.Show("Đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMaDonVi.Text = "";
+                txtMaDonVi.Text = DonVi.getAutoId();
+                txtMaDonVi.PlaceholderText = DonVi.getAutoId();
                 txtTenDonVi.Text = "";
-                txtMaDonVi.Focus();
+                txtTenDonVi.Focus();
             }
             else
             {
@@ -83,9 +88,10 @@ namespace QL_PhongMachTu
                 MessageBox.Show("Thêm đơn vị thành công", "Thông báo", MessageBoxButtons.OK);
                 //cập nhật lại list Đơn vị
                 getAllDonVi();
-                txtMaDonVi.Text = "";
+                txtMaDonVi.Text = DonVi.getAutoId();
+                txtMaDonVi.PlaceholderText = DonVi.getAutoId();
                 txtTenDonVi.Text = "";
-                txtMaDonVi.Focus();
+                txtTenDonVi.Focus();
             }
             con.Close();
         }              
@@ -116,9 +122,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllDonVi();
-                        txtMaDonVi.Text = "";
+                        txtMaDonVi.Text = DonVi.getAutoId();
+                        txtMaDonVi.PlaceholderText = DonVi.getAutoId();
                         txtTenDonVi.Text = "";
-                        txtMaDonVi.Focus();
+                        txtTenDonVi.Focus();
                     }
                 }
                 catch
@@ -154,7 +161,7 @@ namespace QL_PhongMachTu
                 cmd.Connection = con;
                 try
                 {
-                    DialogResult res = MessageBox.Show("Bạn có muốn sửa đơn vị này không", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult res = MessageBox.Show("Bạn có muốn sửa đơn vị này không?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res == DialogResult.Yes)
                     {
                         cmd.Parameters.Clear();
@@ -164,9 +171,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllDonVi();
-                        txtMaDonVi.Text = "";
+                        txtMaDonVi.Text = DonVi.getAutoId();
+                        txtMaDonVi.PlaceholderText = DonVi.getAutoId();
                         txtTenDonVi.Text = "";
-                        txtMaDonVi.Focus();
+                        txtTenDonVi.Focus();
                     }
                 }
                 catch (Exception ex)

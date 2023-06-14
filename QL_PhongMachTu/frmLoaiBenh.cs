@@ -17,6 +17,9 @@ namespace QL_PhongMachTu
         {
             InitializeComponent();
             getAllLoaiBenh();
+            txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+            txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
+            txtTenLoaiBenh.Focus();
         }
 
         public void getAllLoaiBenh()
@@ -60,9 +63,10 @@ namespace QL_PhongMachTu
             if (CheckData_Nhap())
             {
                 MessageBox.Show("Thông tin vừa nhập không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtMaLoaiBenh.Text = "";
                 txtTenLoaiBenh.Text = "";
-                txtMaLoaiBenh.Focus();
+                txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+                txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
+                txtTenLoaiBenh.Focus();
                 return;
             }
             else
@@ -83,16 +87,18 @@ namespace QL_PhongMachTu
                     MessageBox.Show("Thêm loại bệnh thành công", "Thông báo", MessageBoxButtons.OK);
                     //cập nhật lại list loại bệnh
                     getAllLoaiBenh();
-                    txtMaLoaiBenh.Text = "";
+                    txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+                    txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
                     txtTenLoaiBenh.Text = "";
-                    txtMaLoaiBenh.Focus();
+                    txtTenLoaiBenh.Focus();
                 }
                 catch
                 {
                     MessageBox.Show("Đã tồn tại!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    txtMaLoaiBenh.Text = "";
+                    txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+                    txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
                     txtTenLoaiBenh.Text = "";
-                    txtMaLoaiBenh.Focus();
+                    txtTenLoaiBenh.Focus();
                 }
                 finally
                 {
@@ -131,9 +137,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Xóa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllLoaiBenh();
-                        txtMaLoaiBenh.Text = "";
+                        txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+                        txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
                         txtTenLoaiBenh.Text = "";
-                        txtMaLoaiBenh.Focus();
+                        txtTenLoaiBenh.Focus();
                     }
                 }
                 catch
@@ -172,9 +179,10 @@ namespace QL_PhongMachTu
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getAllLoaiBenh();
-                        txtMaLoaiBenh.Text = "";
+                        txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+                        txtMaLoaiBenh.PlaceholderText = LoaiBenh.getAutoId();
                         txtTenLoaiBenh.Text = "";
-                        txtMaLoaiBenh.Focus();
+                        txtTenLoaiBenh.Focus();
                     }
                 }
                 catch (Exception ex)

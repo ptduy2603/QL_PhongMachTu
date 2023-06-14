@@ -71,6 +71,7 @@
             // 
             // dvwDanhSachCachDung
             // 
+            this.dvwDanhSachCachDung.AllowUserToAddRows = false;
             this.dvwDanhSachCachDung.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dvwDanhSachCachDung.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dvwDanhSachCachDung.Dock = System.Windows.Forms.DockStyle.Fill;
