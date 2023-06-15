@@ -120,6 +120,7 @@
             this.txtMaPhieuNhapThuoc.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtMaPhieuNhapThuoc.Location = new System.Drawing.Point(13, 67);
             this.txtMaPhieuNhapThuoc.Name = "txtMaPhieuNhapThuoc";
+            this.txtMaPhieuNhapThuoc.ReadOnly = true;
             this.txtMaPhieuNhapThuoc.Size = new System.Drawing.Size(197, 30);
             this.txtMaPhieuNhapThuoc.TabIndex = 3;
             // 

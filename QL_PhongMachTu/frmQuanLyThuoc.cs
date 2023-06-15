@@ -95,29 +95,32 @@ namespace QL_PhongMachTu
                 errorProvider.SetError(txtGiaBan, "Giá bán không hợp lệ");
                 return false;
             }  
-            else
+      
+            return true;
+        }
+
+        public bool checkDonGiaBan()
+        {
+            // check xem giá bán thay đổi có lớn hơn hoặc bằng giá nhập hay không
+            SqlConnection con = Connection.getConnection();
+            con.Open();
+            SqlCommand cmd = new SqlCommand()
             {
-                // check xem giá bán thay đổi có lớn hơn hoặc bằng giá nhập hay không
-                SqlConnection con = Connection.getConnection();
-                con.Open();
-                SqlCommand cmd = new SqlCommand()
-                {
-                    CommandType = CommandType.StoredProcedure,
-                    Connection = con,
-                    CommandText = "spCheckDonGiaBan"
-                };
-                cmd.Parameters.AddWithValue("@DonGiaBan", giaBan);
-                cmd.Parameters.AddWithValue("@MaLT", txtMaThuoc.Text.Trim());
-                object result = cmd.ExecuteScalar();
-                con.Close();
-                int code = Convert.ToInt32(result);
-                if(code == 0) 
-                {
-                    errorProvider.SetError(txtGiaBan, "Giá bán nhỏ hơn giá nhập thuốc hiện tại!");
-                    return false;
-                }    
+                CommandType = CommandType.StoredProcedure,
+                Connection = con,
+                CommandText = "spCheckDonGiaBan"
+            };
+            cmd.Parameters.AddWithValue("@DonGiaBan", Convert.ToInt32(txtGiaBan.Text.Trim()));
+            cmd.Parameters.AddWithValue("@MaLT", txtMaThuoc.Text.Trim());
+            object result = cmd.ExecuteScalar();
+            con.Close();
+            int code = Convert.ToInt32(result);
+            if (code == 0)
+            {
+                errorProvider.SetError(txtGiaBan, "Giá bán nhỏ hơn giá nhập thuốc hiện tại!");
+                return false;
             }
-            
+
             return true;
         }
 
@@ -130,6 +133,8 @@ namespace QL_PhongMachTu
             cboDonVi.SelectedIndex = 0;
             cboCachDung.SelectedIndex = 0;
             txtGiaBan.Text = "";
+            cboCachDung.Text = "";
+            cboDonVi.Text = "";
             txtTenThuoc.Focus();
         }
 
@@ -250,7 +255,7 @@ namespace QL_PhongMachTu
         private void btnSua_Click(object sender, EventArgs e)
         {
             
-            if(checkData())
+            if(checkData() && checkDonGiaBan())
             {
                 SqlConnection con = Connection.getConnection();
                 con.Open();
