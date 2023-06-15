@@ -187,7 +187,7 @@ namespace QL_PhongMachTu
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Tên loại bệnh đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -199,6 +199,13 @@ namespace QL_PhongMachTu
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            txtTenLoaiBenh.Text = "";
+            txtMaLoaiBenh.Text = LoaiBenh.getAutoId();
+            txtTenLoaiBenh.Focus();
         }
     }
 }

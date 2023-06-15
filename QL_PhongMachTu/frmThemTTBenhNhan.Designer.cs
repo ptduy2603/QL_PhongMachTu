@@ -218,6 +218,7 @@
             this.txtMaBenhNhan.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMaBenhNhan.Location = new System.Drawing.Point(187, 80);
             this.txtMaBenhNhan.Name = "txtMaBenhNhan";
+            this.txtMaBenhNhan.ReadOnly = true;
             this.txtMaBenhNhan.Size = new System.Drawing.Size(273, 34);
             this.txtMaBenhNhan.TabIndex = 0;
             // 

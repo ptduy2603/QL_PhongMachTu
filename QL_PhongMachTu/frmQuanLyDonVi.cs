@@ -179,7 +179,7 @@ namespace QL_PhongMachTu
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Tên đơn vị đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -187,6 +187,12 @@ namespace QL_PhongMachTu
                 }
             }
         }
-               
+
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtTenDonVi.Text = "";
+            txtMaDonVi.Text = DonVi.getAutoId();
+            txtTenDonVi.Focus();
+        }
     }
 }

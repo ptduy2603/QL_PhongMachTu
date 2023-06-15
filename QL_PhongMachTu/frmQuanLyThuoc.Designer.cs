@@ -169,6 +169,7 @@
             this.txtMaThuoc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMaThuoc.Location = new System.Drawing.Point(149, 51);
             this.txtMaThuoc.Name = "txtMaThuoc";
+            this.txtMaThuoc.ReadOnly = true;
             this.txtMaThuoc.Size = new System.Drawing.Size(223, 34);
             this.txtMaThuoc.TabIndex = 0;
             // 

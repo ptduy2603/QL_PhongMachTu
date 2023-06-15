@@ -40,6 +40,7 @@
             this.txtMaCachDung = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             this.grbDanhSachTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvwDanhSachCachDung)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -91,9 +92,9 @@
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(629, 345);
+            this.btnThoat.Location = new System.Drawing.Point(477, 396);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(128, 59);
+            this.btnThoat.Size = new System.Drawing.Size(278, 46);
             this.btnThoat.TabIndex = 20;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -105,7 +106,7 @@
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(477, 345);
+            this.btnSua.Location = new System.Drawing.Point(477, 329);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(128, 59);
             this.btnSua.TabIndex = 19;
@@ -169,6 +170,7 @@
             this.txtMaCachDung.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMaCachDung.Location = new System.Drawing.Point(51, 87);
             this.txtMaCachDung.Name = "txtMaCachDung";
+            this.txtMaCachDung.ReadOnly = true;
             this.txtMaCachDung.Size = new System.Drawing.Size(231, 34);
             this.txtMaCachDung.TabIndex = 6;
             // 
@@ -192,12 +194,27 @@
             this.label2.TabIndex = 4;
             this.label2.Text = "Mã Cách Dùng";
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(629, 329);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(128, 59);
+            this.btnReset.TabIndex = 23;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // frmQuanLyCachDung
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(767, 442);
+            this.ClientSize = new System.Drawing.Size(767, 452);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbDanhSachTaiKhoan);
             this.Controls.Add(this.btnThoat);
@@ -230,5 +247,6 @@
         private TextBox txtMaCachDung;
         private Label label3;
         private Label label2;
+        private Button btnReset;
     }
 }

@@ -229,7 +229,7 @@ namespace QL_PhongMachTu
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Không thể xóa bệnh nhân này", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -245,10 +245,11 @@ namespace QL_PhongMachTu
             {
                 // mọi điều kiện oke tiến hành connect database để thêm bệnh nhân mới 
                 SqlConnection con = Connection.getConnection();
+                con.Open();
                 BenhNhan bn = new BenhNhan(txtMaBenhNhan.Text.Trim(), txtTenBenhNhan.Text.Trim(), chkNam.Checked ? "Nam" : "Nu", Convert.ToInt32(txtNamSinh.Text.Trim()), txtDiaChi.Text.Trim());
+                             
                 try
-                {
-                    con.Open();
+                {                   
                     SqlCommand cmd = new SqlCommand()
                     {
                         Connection = con,

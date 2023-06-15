@@ -148,7 +148,7 @@ namespace QL_PhongMachTu
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message);
+                    MessageBox.Show("Tên cách dùng đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -206,6 +206,12 @@ namespace QL_PhongMachTu
             }
         }
 
+        private void btnReset_Click(object sender, EventArgs e)
+        {
+            txtTenCachDung.Text = "";
+            txtTenCachDung.Focus();
+            txtMaCachDung.Text = CachDung.getAutoId();
+        }
     }
 }
 

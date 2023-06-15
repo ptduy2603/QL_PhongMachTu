@@ -40,6 +40,7 @@
             this.txtMaDonVi = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
             this.grbDanhSachTaiKhoan.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dvwDanhSachDonVi)).BeginInit();
             this.groupBox1.SuspendLayout();
@@ -64,9 +65,9 @@
             this.btnThoat.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnThoat.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnThoat.ForeColor = System.Drawing.Color.White;
-            this.btnThoat.Location = new System.Drawing.Point(638, 348);
+            this.btnThoat.Location = new System.Drawing.Point(483, 402);
             this.btnThoat.Name = "btnThoat";
-            this.btnThoat.Size = new System.Drawing.Size(128, 59);
+            this.btnThoat.Size = new System.Drawing.Size(280, 47);
             this.btnThoat.TabIndex = 15;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = false;
@@ -78,7 +79,7 @@
             this.btnSua.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSua.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnSua.ForeColor = System.Drawing.Color.White;
-            this.btnSua.Location = new System.Drawing.Point(486, 348);
+            this.btnSua.Location = new System.Drawing.Point(486, 331);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(128, 59);
             this.btnSua.TabIndex = 14;
@@ -120,7 +121,7 @@
             this.grbDanhSachTaiKhoan.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.grbDanhSachTaiKhoan.Location = new System.Drawing.Point(12, 201);
             this.grbDanhSachTaiKhoan.Name = "grbDanhSachTaiKhoan";
-            this.grbDanhSachTaiKhoan.Size = new System.Drawing.Size(465, 241);
+            this.grbDanhSachTaiKhoan.Size = new System.Drawing.Size(465, 248);
             this.grbDanhSachTaiKhoan.TabIndex = 16;
             this.grbDanhSachTaiKhoan.TabStop = false;
             this.grbDanhSachTaiKhoan.Text = "Danh Sách Đơn Vị";
@@ -137,7 +138,7 @@
             this.dvwDanhSachDonVi.RowHeadersWidth = 51;
             this.dvwDanhSachDonVi.RowTemplate.Height = 29;
             this.dvwDanhSachDonVi.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dvwDanhSachDonVi.Size = new System.Drawing.Size(459, 212);
+            this.dvwDanhSachDonVi.Size = new System.Drawing.Size(459, 219);
             this.dvwDanhSachDonVi.TabIndex = 0;
             this.dvwDanhSachDonVi.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dvwDanhSachTaiKhoan_CellClick);
             // 
@@ -170,6 +171,7 @@
             this.txtMaDonVi.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMaDonVi.Location = new System.Drawing.Point(31, 88);
             this.txtMaDonVi.Name = "txtMaDonVi";
+            this.txtMaDonVi.ReadOnly = true;
             this.txtMaDonVi.Size = new System.Drawing.Size(231, 34);
             this.txtMaDonVi.TabIndex = 2;
             // 
@@ -193,12 +195,27 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "Mã Đơn Vị";
             // 
+            // btnReset
+            // 
+            this.btnReset.BackColor = System.Drawing.SystemColors.MenuHighlight;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(638, 331);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(128, 59);
+            this.btnReset.TabIndex = 18;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = false;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
             // frmQuanLyDonVi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(771, 442);
+            this.ClientSize = new System.Drawing.Size(771, 461);
+            this.Controls.Add(this.btnReset);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.grbDanhSachTaiKhoan);
             this.Controls.Add(this.btnThoat);
@@ -231,5 +248,6 @@
         private TextBox txtMaDonVi;
         private Label label3;
         private Label label2;
+        private Button btnReset;
     }
 }

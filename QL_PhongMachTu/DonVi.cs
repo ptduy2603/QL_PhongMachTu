@@ -12,7 +12,7 @@ namespace QL_PhongMachTu
     {
         public static string getAutoId()
         {
-            string sql = @"select * from DONVI";
+            string sql = @"select * from DONVI order by MaDV asc";
             // tăng mã tự động cho đối tượng bệnh nhân 
             SqlConnection con = Connection.getConnection();
             con.Open();
