@@ -213,7 +213,7 @@ namespace QL_PhongMachTu
                 }
                 catch(Exception ex)
                 {
-                    MessageBox.Show("Mã thuốc đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("Thuốc đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
                 finally
                 {
@@ -275,12 +275,22 @@ namespace QL_PhongMachTu
                 }    
                 else
                 {
-                    cmd.CommandText = "spUpdateMedicine";
-                    cmd.Parameters.AddWithValue("@TenLT", txtTenThuoc.Text.Trim());
-                    cmd.Parameters.AddWithValue("@MaDV", cboDonVi.SelectedValue.ToString());
-                    cmd.Parameters.AddWithValue("@MaCD", cboCachDung.SelectedValue.ToString());
-                    cmd.Parameters.AddWithValue("@DonGiaBan", Convert.ToInt32(txtGiaBan.Text.Trim()));
-                    cmd.ExecuteNonQuery();
+                   try
+                    {
+                        cmd.CommandText = "spUpdateMedicine";
+                        cmd.Parameters.AddWithValue("@TenLT", txtTenThuoc.Text.Trim());
+                        cmd.Parameters.AddWithValue("@MaDV", cboDonVi.SelectedValue.ToString());
+                        cmd.Parameters.AddWithValue("@MaCD", cboCachDung.SelectedValue.ToString());
+                        cmd.Parameters.AddWithValue("@DonGiaBan", Convert.ToInt32(txtGiaBan.Text.Trim()));
+                        cmd.ExecuteNonQuery();
+                       
+                    }
+                    catch(Exception ex)
+                    {
+                        MessageBox.Show("Tên thuốc đã tồn tại", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                     MessageBox.Show("Cập nhật thuốc thành công", "Thông báo", MessageBoxButtons.OK);
                     loadDanhSachThuoc();
                     resetData();
