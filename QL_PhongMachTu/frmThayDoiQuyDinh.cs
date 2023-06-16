@@ -82,7 +82,7 @@ namespace QL_PhongMachTu
                         cmd.Parameters.Clear();
                         cmd.CommandText = "spSuaThamSo";
                         cmd.Parameters.AddWithValue("@TenThamSo", txtTenThamSo.Text.Trim());
-                        cmd.Parameters.AddWithValue("@GiaTri", txtGiaTri.Text.Trim());
+                        cmd.Parameters.AddWithValue("@GiaTri", Convert.ToInt32(txtGiaTri.Text.Trim()));
                         cmd.ExecuteNonQuery();
                         MessageBox.Show("Sửa thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         getaAllThamSo();

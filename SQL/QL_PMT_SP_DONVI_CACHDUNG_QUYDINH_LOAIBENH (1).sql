@@ -142,8 +142,8 @@ end
 go
 
 --Sửa Tham Số
-create proc spSuaThamSo
-@TenThamSo Nvarchar(40),
+ALTER proc spSuaThamSo
+@TenThamSo nvarchar(40),
 @GiaTri int
 as
 begin
