@@ -39,6 +39,19 @@ namespace QL_PhongMachTu
 
         }
 
+        public bool checkValue()
+        {
+            int value;
+            bool check = int.TryParse(txtGiaTri.Text.Trim(), out value);
+            if (check == false || value <= 0)
+            {
+                errorProvider.SetError(txtGiaTri, "Giá trị không hợp lệ");
+                return false;
+            }
+
+            return true;
+        }
+
         public void getaAllThamSo()
         {
             SqlConnection con = Connection.getConnection();
@@ -63,7 +76,7 @@ namespace QL_PhongMachTu
         }        
         private void btnSua_Click(object sender, EventArgs e)
         {
-            if (CheckData_Nhap())
+            if (!checkValue())
             {
                 MessageBox.Show("Thông tin vừa nhập không hợp lệ!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
@@ -76,7 +89,7 @@ namespace QL_PhongMachTu
                 CheckData_SQL(con, cmd, code);
                 try
                 {
-                    DialogResult res = MessageBox.Show("Bạn có muốn sửa tham số này không", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                    DialogResult res = MessageBox.Show("Bạn có muốn sửa tham số này không?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
                     if (res == DialogResult.Yes)
                     {
                         cmd.Parameters.Clear();
@@ -105,6 +118,11 @@ namespace QL_PhongMachTu
         private void btnThoat_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void txtGiaTri_TextChanged(object sender, EventArgs e)
+        {
+            errorProvider.SetError(txtGiaTri, null);
         }
     }
 }

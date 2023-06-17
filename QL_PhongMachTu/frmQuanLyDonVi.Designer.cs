@@ -225,7 +225,7 @@
             this.Controls.Add(this.label1);
             this.Name = "frmQuanLyDonVi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmQuanLyDonVi";
+            this.Text = "Quản Lý Đơn Vị";
             this.grbDanhSachTaiKhoan.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dvwDanhSachDonVi)).EndInit();
             this.groupBox1.ResumeLayout(false);

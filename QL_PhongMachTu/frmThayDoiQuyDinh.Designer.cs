@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.dtvQuyDinh = new System.Windows.Forms.DataGridView();
@@ -38,9 +39,11 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtvQuyDinh)).BeginInit();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -102,6 +105,7 @@
             this.txtGiaTri.Name = "txtGiaTri";
             this.txtGiaTri.Size = new System.Drawing.Size(197, 34);
             this.txtGiaTri.TabIndex = 3;
+            this.txtGiaTri.TextChanged += new System.EventHandler(this.txtGiaTri_TextChanged);
             // 
             // txtTenThamSo
             // 
@@ -160,6 +164,10 @@
             this.btnThoat.UseVisualStyleBackColor = false;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
+            // 
             // frmThayDoiQuyDinh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -180,6 +188,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtvQuyDinh)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -196,5 +205,6 @@
         private Button btnSua;
         private DataGridView dtvQuyDinh;
         private Button btnThoat;
+        private ErrorProvider errorProvider;
     }
 }
